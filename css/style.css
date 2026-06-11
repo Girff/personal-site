@@ -92,9 +92,11 @@ body.no-webgl {
 }
 
 /* ===== generic text helpers ===== */
-.num-red  { color: var(--red); }
-.num-blue { color: #51c4ff; }
-.num-gold { color: var(--gold); }
+.num-red    { color: var(--red); }
+.num-blue   { color: #51c4ff; }
+.num-gold   { color: var(--gold); }
+.num-green  { color: #5fd6a7; }
+.num-orange { color: var(--orange); }
 .muted    { color: var(--muted); }
 .red-t    { color: var(--red); }
 
@@ -765,6 +767,7 @@ footer.section { padding-bottom: 110px; }
 }
 
 .voucher:nth-child(2) { rotate: 2deg; }
+.voucher:nth-child(3) { rotate: -2.5deg; }
 
 .voucher .bcard-tilt {
   position: relative;
