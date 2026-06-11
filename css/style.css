@@ -1244,3 +1244,146 @@ body.crt-off .crt-overlay { display: none; }
 
 .blind-box { background: #8a3742; }
 .blind-box::before { background: linear-gradient(180deg, #4a2430, #2c1a23); }
+
+/* ===== movies (letterboxd) ===== */
+.bbtn.teal { --c: #1fb6a6; --c-dk: #137d72; }
+.teal-pl   { background: #1fb6a6; }
+
+.movies-panel .r-plaque { margin-bottom: 16px; }
+
+.fav-row {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.fav-card {
+  display: block;
+  width: 168px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fav-card .bcard-tilt {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.fav-art {
+  aspect-ratio: 2 / 3;
+  background:
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, .12) 0 10px, transparent 10px 20px),
+    linear-gradient(165deg, #1fb6a6, #0e5f57);
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+.fav-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fav-art img.lb-noimg { display: none; }
+
+.fav-label {
+  margin-top: 7px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--ink);
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.fav-year { color: #8d8675; font-size: 12px; }
+
+.review-list { display: flex; flex-direction: column; gap: 14px; }
+
+.review-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--panel-light);
+  clip-path: var(--pix-sm);
+  position: relative;
+  padding: 14px 18px;
+  transition: transform .12s, filter .12s;
+}
+
+.review-row::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: var(--panel-dk);
+  clip-path: var(--pix-sm);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.review-row:hover { transform: translateY(-3px) rotate(-.3deg); filter: brightness(1.12); }
+
+.review-thumb {
+  flex: 0 0 54px;
+  aspect-ratio: 2 / 3;
+  background: #17222a;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+
+.review-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.review-thumb img.lb-noimg { display: none; }
+
+.review-body { min-width: 0; }
+
+.review-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.review-head b { font-size: 21px; }
+.review-year { color: var(--muted); font-size: 15px; }
+.review-stars { color: var(--gold); font-size: 17px; letter-spacing: .08em; }
+
+.review-rewatch {
+  font-size: 11px;
+  letter-spacing: .1em;
+  color: #fff;
+  background: var(--green);
+  padding: 1px 8px 2px;
+  clip-path: var(--pix-xs);
+}
+
+.review-date { color: var(--muted); font-size: 13px; letter-spacing: .06em; margin-top: 2px; }
+
+.review-text {
+  margin: 8px 0 0;
+  font-size: 17px;
+  color: #d6dde0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movies-foot {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.movies-foot .muted { font-size: 14px; }
+
+@media (max-width: 760px) {
+  .fav-row { gap: 16px; }
+  .fav-card { width: 136px; }
+  .review-head b { font-size: 18px; }
+}

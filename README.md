@@ -80,6 +80,22 @@ deploy. If you later buy a domain, you have two options:
   `blog/` into its own repo with its own Pages site and point a `blog.advay.dev` CNAME record at it.
   More moving parts; only worth it if you want the separation.
 
+## Letterboxd section
+
+The MOVIES section shows the four favorites and recent reviews from
+[letterboxd.com/Girff](https://letterboxd.com/Girff/). It reads `assets/data/letterboxd.json`,
+which is refreshed by `scripts/fetch_letterboxd.py`:
+
+- **Automatically:** `.github/workflows/letterboxd.yml` runs daily (and via the
+  "Run workflow" button under the repo's Actions tab) and commits the JSON when it changes.
+  GitHub Pages redeploys automatically after the commit.
+- **Manually:** `python3 scripts/fetch_letterboxd.py` locally, then commit.
+
+Data comes from Letterboxd's public RSS feed (reviews) and your public profile page
+(favorites + posters). To change the account, set the username in `scripts/fetch_letterboxd.py`
+(or the `LETTERBOXD_USER` env var). Note: GitHub disables cron schedules on repos with no
+activity for ~60 days — pushing anything re-enables it.
+
 ## Adding a project
 
 Copy the `.project-row` block in `index.html`, swap the name/description/chips/links, and add a
@@ -88,8 +104,10 @@ screenshot in `assets/img/`. Delete the "empty joker slot" once you've got a few
 ## Structure
 
 ```
-index.html          main page (hero, about, skills game, projects, achievements, blog, resume)
+index.html          main page (hero, about, skills game, projects, achievements, blog, movies, resume)
 resume.html         traditional print-ready resume (source of assets/resume.pdf)
+scripts/fetch_letterboxd.py   pulls Letterboxd data into assets/data/letterboxd.json
+.github/workflows/letterboxd.yml  daily auto-refresh of the Letterboxd data
 blog/index.html     blog list ("packs")
 blog/post.html      renders one markdown post (?p=slug)
 blog/posts.json     post index
@@ -100,6 +118,7 @@ js/cards.js         card physics: fan layout, hover tilt, drag to reorder, snap-
 js/game.js          skills mini-game: deals, poker scoring, discards, boss blinds
 js/main.js          page wiring + CONFIG
 js/blog.js          blog list/post logic
+js/letterboxd.js    renders the movies section from the fetched JSON
 assets/fonts/       m6x11.ttf
 assets/img/         your photo + screenshots go here
 assets/resume.pdf   the downloadable resume
