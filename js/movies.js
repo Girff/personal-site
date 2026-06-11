@@ -258,12 +258,18 @@
     }
   }
 
-  /* ---------- load ---------- */
-  fetch('assets/data/letterboxd.json')
-    .then(function (r) {
-      if (!r.ok) throw new Error('http ' + r.status);
-      return r.json();
-    })
+  /* ---------- load ----------
+     The data ships embedded (assets/data/letterboxd.js sets
+     window.LETTERBOXD_DATA) so the page works even on file://;
+     fetch() is just the fallback. */
+  var load = window.LETTERBOXD_DATA
+    ? Promise.resolve(window.LETTERBOXD_DATA)
+    : fetch('assets/data/letterboxd.json').then(function (r) {
+        if (!r.ok) throw new Error('http ' + r.status);
+        return r.json();
+      });
+
+  load
     .then(function (data) {
       renderHistogram(data);
       renderMonth(data);
@@ -292,7 +298,7 @@
       document.querySelectorAll('.mv-panel').forEach(function (p) { p.style.display = 'none'; });
       var page = document.querySelector('.subpage');
       var err = el('p', 'mv-empty',
-        'couldn’t load the movie data — serve the site over http or run scripts/fetch_letterboxd.py first.');
+        'couldn’t load the movie data — run scripts/fetch_letterboxd.py (or the GitHub workflow) to generate it.');
       page.insertBefore(err, document.querySelector('.movies-foot'));
     });
 })();

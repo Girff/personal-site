@@ -38,11 +38,16 @@
     return img;
   }
 
-  fetch('assets/data/letterboxd.json')
-    .then(function (r) {
-      if (!r.ok) throw new Error('http ' + r.status);
-      return r.json();
-    })
+  // data ships embedded via assets/data/letterboxd.js (works on file://);
+  // fetch() is just the fallback
+  var load = window.LETTERBOXD_DATA
+    ? Promise.resolve(window.LETTERBOXD_DATA)
+    : fetch('assets/data/letterboxd.json').then(function (r) {
+        if (!r.ok) throw new Error('http ' + r.status);
+        return r.json();
+      });
+
+  load
     .then(function (data) {
       mount.innerHTML = '';
 
@@ -115,8 +120,7 @@
     })
     .catch(function () {
       mount.innerHTML =
-        '<p class="muted">couldn\'t load the movie data. it appears once ' +
-        '<code>assets/data/letterboxd.json</code> exists — run ' +
-        '<code>python3 scripts/fetch_letterboxd.py</code> or the GitHub workflow.</p>';
+        '<p class="muted">couldn\'t load the movie data — run ' +
+        '<code>python3 scripts/fetch_letterboxd.py</code> or the GitHub workflow to generate it.</p>';
     });
 })();
