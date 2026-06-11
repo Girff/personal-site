@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advay · programmer, game maker, card enthusiast</title>
+  <meta name="description" content="Advay's personal site — games, projects, achievements, and a blog. Styled like a certain poker roguelike.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23fe5f55'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>♠</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- swirling paint background (WebGL recreation of the Balatro-style shader) -->
+  <canvas id="bg-shader" aria-hidden="true"></canvas>
+
+  <!-- ===== top nav ===== -->
+  <nav class="topnav">
+    <a class="nav-brand" href="#top" aria-label="back to top">A♠</a>
+    <div class="nav-btns">
+      <a class="bbtn blue sm" href="#about">ABOUT</a>
+      <a class="bbtn red sm" href="#skills">SKILLS</a>
+      <a class="bbtn orange sm" href="#projects">PROJECTS</a>
+      <a class="bbtn green sm" href="#achievements">ACHIEVEMENTS</a>
+      <a class="bbtn purple sm" href="blog/index.html">BLOG</a>
+      <a class="bbtn gold sm" href="#resume">RESUME</a>
+    </div>
+  </nav>
+
+  <!-- ===== hero ===== -->
+  <header class="hero section" id="top">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1 class="logo" id="logo">ADVAY</h1>
+        <p class="tag">I make games, websites, and the occasional questionable design decision.</p>
+        <p class="subtag">programmer · CS club officer · UIL state competitor · penguin spelunking consultant</p>
+        <div class="hero-btns">
+          <a class="bbtn red big" href="#projects">SEE MY STUFF</a>
+          <a class="bbtn blue big" href="blog/index.html">READ THE BLOG</a>
+        </div>
+        <div class="hud">
+          <div class="hud-chip"><span>SKILLS IN HAND</span><b class="num-blue">11</b></div>
+          <div class="hud-chip"><span>UIL STATE PLACEMENT</span><b class="num-gold">4th</b></div>
+          <div class="hud-chip"><span>PROJECTS</span><b class="num-red">1 &amp; counting</b></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-card" data-float-card>
+          <div class="bcard-tilt">
+            <!-- TODO: add your photo at assets/img/me.jpg — the card upgrades itself automatically -->
+            <img class="portrait-img" src="assets/img/me.jpeg" alt="Photo of Advay"
+                 onerror="this.closest('.bcard-tilt').classList.add('no-photo')">
+            <div class="portrait-fallback" aria-hidden="true">
+              <div class="pf-suit">♠</div>
+              <div class="pf-text">YOUR PHOTO<br>GOES HERE</div>
+              <div class="pf-hint">add assets/img/me.jpg</div>
+            </div>
+            <div class="portrait-label">ADVAY <span class="holo">· HOLOGRAPHIC</span></div>
+          </div>
+        </div>
+        <p class="drag-hint">(yes, the card is draggable. most of them are. go nuts.)</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== about ===== -->
+    <section id="about" class="section">
+      <div class="sec-head">
+        <span class="sec-plaque blue-pl">ABOUT ME</span>
+        <span class="sec-sub">the part where I talk about myself</span>
+      </div>
+      <div class="panel about-panel">
+        <!-- TODO: tweak this copy so it sounds like you — it's written from what you told me -->
+        <p>Hi — I'm Advay. I'm a programmer who got into code through games and never really found a reason to leave.</p>
+        <p>So far that's looked like: building a platformer about a penguin in a cave, helping run my school's
+          Computer Science Club as an officer, and captaining our UIL Computer Science team to the Texas state
+          competition — where we placed <b class="num-gold">4th</b>.</p>
+        <p>I like problems that look impossible for the first twenty minutes, things that feel good to click on
+          (see: this entire website), and shipping stuff instead of just talking about it.</p>
+        <p>This site is my deck. Look through it, drag things around, see what I'm holding.</p>
+      </div>
+    </section>
+
+    <!-- ===== skills ===== -->
+    <section id="skills" class="section">
+      <div class="sec-head">
+        <span class="sec-plaque red-pl">SKILLS</span>
+        <span class="sec-sub">my current hand — select up to 5, then play it or discard it</span>
+      </div>
+      <div class="panel skills-panel">
+        <div class="game-layout">
+
+          <!-- left HUD, like the in-run sidebar -->
+          <aside class="game-hud">
+            <div class="blind-box">
+              <div class="blind-name-row">
+                <span class="blind-chip" aria-hidden="true">BOSS</span>
+                <span class="blind-name" id="blind-name">The Null Pointer</span>
+              </div>
+              <div class="blind-target">Score at least <b id="blind-target">300</b></div>
+            </div>
+            <div class="score-box">
+              <span class="score-label">ROUND SCORE</span>
+              <b class="score-num" id="round-score">0</b>
+            </div>
+            <div class="hd-row">
+              <div class="hd-box">
+                <span>HANDS</span>
+                <b class="num-blue" id="hands-left">4</b>
+              </div>
+              <div class="hd-box">
+                <span>DISCARDS</span>
+                <b class="num-red" id="discards-left">4</b>
+              </div>
+            </div>
+            <div class="totals-box">
+              <span>TOTAL SCORE <b class="num-gold" id="total-score">0</b></span>
+              <span>BLINDS BEATEN <b class="num-gold" id="blinds-beaten">0</b></span>
+            </div>
+          </aside>
+
+          <!-- table: hand + action bar -->
+          <div class="game-table">
+            <div class="hand" id="skill-hand">
+              <noscript>
+                <ul class="skill-fallback">
+                  <li><b>Languages:</b> Python, Java, C#, JavaScript, HTML/CSS, Swift</li>
+                  <li><b>Frameworks &amp; libraries:</b> XNA/MonoGame, React</li>
+                  <li><b>Dev skills:</b> Git/GitHub, Agile/Scrum, algorithmic problem solving</li>
+                </ul>
+              </noscript>
+            </div>
+            <div class="hand-preview" id="hand-preview">&nbsp;</div>
+            <div class="action-bar">
+              <button class="bbtn blue act" id="play-hand" type="button">PLAY HAND</button>
+              <div class="sort-box">
+                <span class="sort-label">SORT HAND</span>
+                <div class="sort-box-btns">
+                  <button class="bbtn orange sm" id="sort-rank" type="button">RANK</button>
+                  <button class="bbtn orange sm" id="sort-suit" type="button">SUIT</button>
+                </div>
+              </div>
+              <button class="bbtn red act" id="discard-hand" type="button">DISCARD</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="skills-legend">
+          <span class="legend-item">♠ languages</span>
+          <span class="legend-item red-t">♥ frameworks &amp; libraries</span>
+          <span class="legend-item red-t">♦ dev skills</span>
+          <span class="legend-item legend-hint">ranks reshuffle every deal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== projects ===== -->
+    <section id="projects" class="section">
+      <div class="sec-head">
+        <span class="sec-plaque orange-pl">PROJECTS</span>
+        <span class="sec-sub">jokers I've collected</span>
+      </div>
+
+      <div class="panel project-row">
+        <div class="joker-card" data-float-card>
+          <div class="bcard-tilt">
+            <div class="joker-art">
+              <!-- TODO: add a screenshot at assets/img/spelunking-penguin.png -->
+              <img src="assets/img/spelunking-penguin.png" alt="Spelunking Penguin screenshot"
+                   onerror="this.closest('.joker-art').classList.add('no-shot')">
+              <div class="shot-fallback" aria-hidden="true">
+                <span class="shot-emoji">🐧</span>
+                <span>ADD A SCREENSHOT</span>
+                <span class="pf-hint">assets/img/spelunking-penguin.png</span>
+              </div>
+            </div>
+            <div class="joker-name">SPELUNKING PENGUIN</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="rarity-row">
+            <span class="rarity rare">RARE</span>
+            <span class="ptype">VIDEO GAME</span>
+          </div>
+          <h3>Spelunking Penguin</h3>
+          <!-- TODO: replace with your real description — what it is, what you built, what was hard -->
+          <p>A 2D platformer starring a penguin with serious cave ambitions. Built in C# on the
+            XNA/MonoGame framework.</p>
+          <div class="chips">
+            <span class="chip blue-c">C#</span>
+            <span class="chip red-c">MonoGame</span>
+            <span class="chip orange-c">Game Dev</span>
+          </div>
+          <div class="proj-btns">
+            <!-- TODO: set your GitHub username in js/main.js CONFIG and these links fill themselves in -->
+            <a class="bbtn dark" data-github="spelunking-penguin" href="https://github.com" target="_blank" rel="noopener">GITHUB ↗</a>
+            <span class="bbtn blue disabled" title="add a playable build or video link here later">PLAY — SOON</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-slot">
+        <span class="empty-title">EMPTY JOKER SLOT</span>
+        <p>the next project goes here. it's still being playtested.</p>
+      </div>
+    </section>
+
+    <!-- ===== achievements ===== -->
+    <section id="achievements" class="section">
+      <div class="sec-head">
+        <span class="sec-plaque green-pl">ACHIEVEMENTS</span>
+        <span class="sec-sub">vouchers redeemed so far</span>
+      </div>
+      <div class="vouchers">
+        <div class="voucher" data-float-card>
+          <div class="bcard-tilt">
+            <div class="v-medal">★</div>
+            <h3>COMPUTER SCIENCE CLUB OFFICER</h3>
+            <p>Officer of my school's Computer Science Club — running meetings, planning events, and
+              recruiting people to the cause.</p>
+            <span class="v-ribbon">LEADERSHIP</span>
+          </div>
+        </div>
+        <div class="voucher" data-float-card>
+          <div class="bcard-tilt">
+            <div class="v-medal gold">♛</div>
+            <h3>UIL CS TEAM CAPTAIN</h3>
+            <p>Captained my school's Computer Science UIL team — qualified for the Texas state
+              competition and placed 4th.</p>
+            <span class="v-sticker">4TH IN STATE</span>
+            <span class="v-ribbon gold">COMPETITIVE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== blog ===== -->
+    <section id="blog" class="section">
+      <div class="sec-head">
+        <span class="sec-plaque purple-pl">BLOG</span>
+        <span class="sec-sub">patch notes for my life</span>
+      </div>
+      <div class="panel blog-panel">
+        <div id="blog-preview" class="blog-preview"><p class="muted">shuffling posts…</p></div>
+        <a class="bbtn purple" href="blog/index.html">OPEN THE BLOG ↗</a>
+      </div>
+    </section>
+
+    <!-- ===== resume ===== -->
+    <section id="resume" class="section">
+      <div class="sec-head">
+        <span class="sec-plaque gold-pl">RESUME</span>
+        <span class="sec-sub">the printable lore</span>
+      </div>
+      <div class="panel resume-panel">
+        <div class="resume-head">
+          <!-- TODO: set githubUser in js/main.js and the github link fills in -->
+          <h3>ADVAY</h3>
+          <p class="resume-contact">advayvk@gmail.com · <a data-github href="https://github.com" target="_blank" rel="noopener">github</a> · this site</p>
+        </div>
+
+        <div class="resume-grid">
+          <!-- education: its own card on the side -->
+          <aside class="edu-card" data-float-card>
+            <div class="bcard-tilt">
+              <span class="edu-tag">EDUCATION</span>
+              <span class="edu-suit" aria-hidden="true">♠</span>
+              <h4>LIBERTY HIGH SCHOOL</h4>
+              <p class="edu-loc">Frisco, Texas</p>
+              <span class="edu-sticker">CLASS OF 2028</span>
+            </div>
+          </aside>
+
+          <div class="resume-stack">
+            <div class="r-row">
+              <span class="r-plaque blue-pl">SKILLS</span>
+              <div class="chips">
+                <span class="chip blue-c">Python</span>
+                <span class="chip blue-c">Java</span>
+                <span class="chip blue-c">C#</span>
+                <span class="chip blue-c">JavaScript</span>
+                <span class="chip blue-c">HTML/CSS</span>
+                <span class="chip blue-c">Swift</span>
+                <span class="chip red-c">XNA / MonoGame</span>
+                <span class="chip red-c">React</span>
+                <span class="chip orange-c">Git &amp; GitHub</span>
+                <span class="chip orange-c">Agile / Scrum</span>
+                <span class="chip orange-c">Algorithmic Problem Solving</span>
+              </div>
+            </div>
+
+            <div class="r-row r-proj">
+              <span class="r-plaque orange-pl">PROJECTS</span>
+              <div>
+                <b>Spelunking Penguin</b><span class="rarity rare">RARE</span>
+                <p>2D platformer built in C# on XNA/MonoGame — gameplay systems, level design,
+                  released on GitHub.</p>
+              </div>
+            </div>
+
+            <div class="r-row">
+              <span class="r-plaque green-pl">LEADERSHIP &amp; AWARDS</span>
+              <div class="r-badge">
+                <span class="r-medal" aria-hidden="true">★</span>
+                <div>
+                  <b>Computer Science Club — Officer</b>
+                  <p>meetings, events, and growing the club.</p>
+                </div>
+              </div>
+              <div class="r-badge">
+                <span class="r-medal gold" aria-hidden="true">♛</span>
+                <div>
+                  <b>UIL Computer Science Team — Captain</b>
+                  <p>led the team to the Texas state competition.</p>
+                </div>
+                <span class="r-sticker">4TH IN STATE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-btns">
+          <a class="bbtn gold big" href="assets/resume.pdf" download="Advay-Resume.pdf">DOWNLOAD RESUME (PDF)</a>
+          <a class="bbtn dark" href="resume.html" target="_blank" rel="noopener">PRINT-READY VERSION ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== footer ===== -->
+  <footer class="section">
+    <div class="panel footer-panel">
+      <p class="foot-big">That's the whole run so far.</p>
+      <p>Want to talk code, games, or why this site has scanlines? Reach out.</p>
+      <div class="foot-btns">
+        <a class="bbtn red" href="mailto:advayvk@gmail.com">EMAIL ME</a>
+        <a class="bbtn dark" data-github href="https://github.com" target="_blank" rel="noopener">GITHUB ↗</a>
+      </div>
+      <p class="fineprint">
+        Font: <a href="https://managore.itch.io/m6x11" target="_blank" rel="noopener">m6x11</a> by Daniel Linssen.
+        Visual style inspired by <a href="https://www.playbalatro.com" target="_blank" rel="noopener">Balatro</a> by LocalThunk —
+        fan-made, not affiliated, no game assets used. Built from scratch with vanilla HTML/CSS/JS.
+      </p>
+    </div>
+  </footer>
+
+  <!-- CRT + sfx toggles -->
+  <div class="fx-toggles">
+    <button id="crt-toggle" class="bbtn dark sm" type="button">CRT: ON</button>
+    <button id="sfx-toggle" class="bbtn dark sm" type="button">SFX: ON</button>
+  </div>
+
+  <!-- CRT filter overlay -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <script src="js/background.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

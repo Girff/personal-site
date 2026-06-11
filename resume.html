@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advay — Resume</title>
+  <style>
+    /* Traditional, recruiter-friendly resume. Print to PDF via the button or Cmd/Ctrl+P.
+       Regenerate assets/resume.pdf after edits — see README. */
+    :root { color-scheme: light; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #525659;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #1a1a1a;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 8.5in;
+      min-height: 11in;
+      margin: 24px auto;
+      background: #fff;
+      padding: .75in .85in;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .4);
+    }
+
+    header { text-align: center; border-bottom: 2px solid #1a1a1a; padding-bottom: 12px; margin-bottom: 18px; }
+
+    h1 { margin: 0; font-size: 30px; letter-spacing: .04em; text-transform: uppercase; }
+
+    .contact { margin-top: 6px; font-size: 13.5px; color: #333; }
+    .contact a { color: #333; text-decoration: none; }
+
+    h2 {
+      font-size: 14.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #888;
+      padding-bottom: 3px;
+      margin: 20px 0 8px;
+    }
+
+    .entry { margin-bottom: 10px; }
+
+    .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+
+    .entry-title { font-weight: bold; font-size: 14.5px; }
+    .entry-meta { font-size: 13px; color: #444; font-style: italic; white-space: nowrap; }
+
+    ul { margin: 4px 0 0; padding-left: 20px; font-size: 13.5px; }
+    li { margin-bottom: 3px; }
+
+    .skills-line { font-size: 13.5px; margin: 3px 0; }
+    .skills-line b { font-weight: bold; }
+
+    .todo { background: #fff3bf; padding: 0 3px; }
+
+    /* floating print button (hidden when printing) */
+    .printbar {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .printbar button, .printbar a {
+      font-family: Georgia, serif;
+      font-size: 14px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #1a73e8;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .printbar a.back { background: #444; }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; padding: .55in .7in; min-height: 0; max-width: none; }
+      .printbar { display: none; }
+      .todo { background: none; }
+    }
+
+    @page { size: letter; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="printbar">
+    <a class="back" href="index.html">← back to the site</a>
+    <button onclick="window.print()" type="button">Print / Save as PDF</button>
+  </div>
+
+  <div class="page">
+    <header>
+      <!-- TODO: full legal name -->
+      <h1>Advay <span class="todo">[Last Name]</span></h1>
+      <p class="contact">
+        advayvk@gmail.com &nbsp;·&nbsp;
+        <span class="todo">github.com/[username]</span> &nbsp;·&nbsp;
+        <span class="todo">[your-site].github.io</span> &nbsp;·&nbsp;
+        Frisco, TX
+      </p>
+    </header>
+
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Liberty High School — Frisco, TX</span>
+        <span class="entry-meta">Expected graduation: 2028</span>
+      </div>
+      <ul>
+        <li>Relevant coursework: <span class="todo">[AP Computer Science A, etc.]</span></li>
+      </ul>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <p class="skills-line"><b>Languages:</b> Python, Java, C#, JavaScript, HTML/CSS, Swift</p>
+    <p class="skills-line"><b>Frameworks &amp; Libraries:</b> XNA/MonoGame, React</p>
+    <p class="skills-line"><b>Practices:</b> Git/GitHub, Agile/Scrum development, algorithmic problem solving</p>
+
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Spelunking Penguin — 2D Platformer</span>
+        <span class="entry-meta">C#, XNA/MonoGame</span>
+      </div>
+      <ul>
+        <li>Designed and built a 2D platformer in C# on the XNA/MonoGame framework.</li>
+        <li>Implemented gameplay systems including <span class="todo">[player movement/physics, level loading, collision — list what you actually built]</span>.</li>
+        <li>Published source code on GitHub.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Personal Website</span>
+        <span class="entry-meta">HTML/CSS, JavaScript, WebGL</span>
+      </div>
+      <ul>
+        <li>Built an interactive, game-styled portfolio site from scratch with vanilla JavaScript — custom WebGL shader background, drag-and-drop card physics, and a static markdown blog; deployed on GitHub Pages.</li>
+      </ul>
+    </div>
+
+    <h2>Leadership &amp; Activities</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Computer Science Club — Officer</span>
+        <span class="entry-meta"><span class="todo">[20XX–present]</span></span>
+      </div>
+      <ul>
+        <li>Help lead club operations: organizing meetings, planning events, and growing membership.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">UIL Computer Science Team — Captain</span>
+        <span class="entry-meta"><span class="todo">[20XX–present]</span></span>
+      </div>
+      <ul>
+        <li>Led the team through district and regional qualification to the Texas state competition.</li>
+      </ul>
+    </div>
+
+    <h2>Awards</h2>
+    <div class="entry">
+      <ul>
+        <li><b>4th Place, UIL Computer Science — Texas State Competition</b> (<span class="todo">[year]</span>), as team captain.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

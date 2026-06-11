@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello, world (obligatory)",
+    "date": "2026-06-10",
+    "summary": "What this site is, why it looks like a card game, and how this blog actually works.",
+    "tags": ["meta", "site"]
+  }
+]

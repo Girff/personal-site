@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post · Advay's Blog</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23a06cf0'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>♦</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <canvas id="bg-shader" aria-hidden="true"></canvas>
+
+  <div class="blog-page">
+    <div class="blog-head">
+      <a class="bbtn purple" href="index.html">← ALL POSTS</a>
+      <a class="bbtn dark" href="../index.html">MAIN SITE</a>
+    </div>
+
+    <article class="panel">
+      <div id="post-meta" class="post-meta"></div>
+      <div id="post-content" class="post-article"><p class="muted">opening the pack…</p></div>
+    </article>
+  </div>
+
+  <div class="fx-toggles">
+    <button id="crt-toggle" class="bbtn dark sm" type="button">CRT: ON</button>
+  </div>
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="../js/background.js"></script>
+  <script src="../js/blog.js"></script>
+  <script>BlogPages.initPost();</script>
+</body>
+</html>

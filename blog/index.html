@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advay's Blog · patch notes for my life</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23a06cf0'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>♦</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <canvas id="bg-shader" aria-hidden="true"></canvas>
+
+  <div class="blog-page">
+    <div class="blog-head">
+      <h1 class="sec-plaque purple-pl" style="font-size:42px;">ADVAY'S BLOG</h1>
+      <a class="bbtn dark" href="../index.html">← BACK TO THE MAIN SITE</a>
+    </div>
+
+    <p class="muted" style="margin-bottom:32px;">every post is a pack. open one.</p>
+
+    <div id="pack-list" class="pack-list">
+      <p class="muted">shuffling posts…</p>
+    </div>
+  </div>
+
+  <div class="fx-toggles">
+    <button id="crt-toggle" class="bbtn dark sm" type="button">CRT: ON</button>
+  </div>
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <script src="../js/background.js"></script>
+  <script src="../js/blog.js"></script>
+  <script>BlogPages.initList();</script>
+</body>
+</html>
