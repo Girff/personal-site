@@ -1,4 +1,4 @@
-/* Page wiring: float cards, logo, toggles, GitHub links, blog preview.
+/* Page wiring: float cards, logo, toggles, GitHub links.
    The skills mini-game lives in js/game.js — don't build the hand here. */
 (function () {
   'use strict';
@@ -77,41 +77,4 @@
     a.href = 'https://github.com/' + CONFIG.githubUser + (repo ? '/' + repo : '');
   });
 
-  /* ---------- blog preview on the homepage ---------- */
-  var preview = document.getElementById('blog-preview');
-  if (preview) {
-    fetch('blog/posts.json')
-      .then(function (r) {
-        if (!r.ok) throw new Error('http ' + r.status);
-        return r.json();
-      })
-      .then(function (posts) {
-        posts.sort(function (a, b) { return b.date.localeCompare(a.date); });
-        preview.innerHTML = '';
-        posts.slice(0, 3).forEach(function (p) {
-          var a = document.createElement('a');
-          a.className = 'post-row';
-          a.href = 'blog/post.html?p=' + encodeURIComponent(p.slug);
-          a.innerHTML =
-            '<span class="post-date">' + fmtDate(p.date) + '</span>' +
-            '<span class="post-title"></span>' +
-            '<span class="post-arrow">→</span>';
-          a.querySelector('.post-title').textContent = p.title;
-          preview.appendChild(a);
-        });
-        if (!posts.length) {
-          preview.innerHTML = '<p class="muted">no posts yet — the deck is still being shuffled.</p>';
-        }
-      })
-      .catch(function () {
-        preview.innerHTML =
-          '<p class="muted">posts load when the site is served over http ' +
-          '(run <code>python3 -m http.server</code> locally, or just publish to GitHub Pages).</p>';
-      });
-  }
-
-  function fmtDate(iso) {
-    var d = new Date(iso + 'T00:00:00');
-    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).toUpperCase();
-  }
 })();

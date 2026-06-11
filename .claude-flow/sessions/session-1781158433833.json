@@ -1,0 +1,14 @@
+{
+  "id": "session-1781158433833",
+  "startedAt": "2026-06-11T06:13:53.833Z",
+  "cwd": "/Users/advaykongorpalli/Documents/Programming/personal site/personal-site",
+  "context": {},
+  "metrics": {
+    "edits": 11,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "endedAt": "2026-06-11T06:36:47.831Z",
+  "duration": 1374001
+}

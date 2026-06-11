@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Movie Corner · Advay</title>
+  <meta name="description" content="If I'm not playing videogames or programming a project, I'm most likely watching a movie. I try my best to watch at least 10 movies every month, sometimes I watch even more!.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231fb6a6'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>♥</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="bg-shader" aria-hidden="true"></canvas>
+
+  <div class="subpage">
+    <div class="subpage-head">
+      <h1 class="sec-plaque teal-pl" style="font-size:40px;">THE MOVIE CORNER</h1>
+      <a class="bbtn dark" href="index.html">← BACK TO THE MAIN SITE</a>
+    </div>
+
+    <p class="muted moviepage-sub">my letterboxd, dealt out balatro-style. the one hobby that rivals the compiler. synced daily.</p>
+
+    <div class="hud moviepage-hud" id="movie-hud"></div>
+
+    <!-- ratings graph -->
+    <section class="panel mv-panel">
+      <div class="mv-head">
+        <span class="r-plaque teal-pl">THE RATINGS</span>
+        <span class="muted" id="hist-sub"></span>
+      </div>
+      <div class="histogram" id="histogram"><p class="muted">tallying the chips…</p></div>
+      <p class="hist-hint">click a bar to see what landed there.</p>
+      <div id="hist-detail" class="hist-detail"></div>
+    </section>
+
+    <!-- this month's reviews -->
+    <section class="panel mv-panel">
+      <div class="mv-head">
+        <span class="r-plaque purple-pl" id="month-title">THIS MONTH</span>
+        <span class="muted" id="month-sub"></span>
+      </div>
+      <div id="month-reviews"><p class="muted">rolling the film…</p></div>
+      <div class="pager" id="month-pager"></div>
+    </section>
+
+    <!-- watchlist -->
+    <section class="panel mv-panel">
+      <div class="mv-head">
+        <span class="r-plaque gold-pl">THE WATCHLIST</span>
+        <span class="muted" id="wl-sub"></span>
+      </div>
+      <div id="watchlist" class="wl-grid"><p class="muted">shuffling the backlog…</p></div>
+    </section>
+
+    <div class="movies-foot">
+      <a class="bbtn teal" id="lb-profile-link" href="https://letterboxd.com/Girff/" target="_blank" rel="noopener">FOLLOW ME ON LETTERBOXD ↗</a>
+      <span class="muted" id="lb-updated"></span>
+    </div>
+  </div>
+
+  <div class="fx-toggles">
+    <button id="crt-toggle" class="bbtn dark sm" type="button">CRT: ON</button>
+    <button id="sfx-toggle" class="bbtn dark sm" type="button">SFX: ON</button>
+  </div>
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <script src="js/background.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/movies.js"></script>
+</body>
+</html>

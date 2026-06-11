@@ -72,11 +72,11 @@
         mount.appendChild(row);
       }
 
-      /* ----- recent reviews ----- */
+      /* ----- two most recent reviews (the full list lives on movies.html) ----- */
       if (data.reviews && data.reviews.length) {
-        mount.appendChild(el('span', 'r-plaque purple-pl', 'RECENT REVIEWS'));
+        mount.appendChild(el('span', 'r-plaque purple-pl', 'LATEST REVIEWS'));
         var list = el('div', 'review-list');
-        data.reviews.forEach(function (r) {
+        data.reviews.slice(0, 2).forEach(function (r) {
           var a = el('a', 'review-row');
           a.href = r.url;
           a.target = '_blank';

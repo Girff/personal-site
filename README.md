@@ -1,6 +1,6 @@
 # advay's personal site
 
-A personal portfolio + blog styled after **Balatro** — swirling paint shader background, draggable
+A personal portfolio styled after **Balatro** — swirling paint shader background, draggable
 playing cards, CRT filter, the works. Built with vanilla HTML/CSS/JS. No frameworks, no build step.
 
 The skills section is a playable blind: skills are cards (suit = category, ranks reshuffle every
@@ -10,7 +10,7 @@ the table, scores persist in localStorage.
 
 ## Run it locally
 
-The blog loads posts with `fetch()`, which browsers block on `file://` URLs. Serve it instead:
+The movie pages load data with `fetch()`, which browsers block on `file://` URLs. Serve it instead:
 
 ```bash
 cd personal-site
@@ -54,47 +54,25 @@ All paths in the site are relative, so it works at a subpath or a root domain.
   --no-pdf-header-footer --print-to-pdf="assets/resume.pdf" "file://$PWD/resume.html"
 ```
 
-## Adding a blog post
+## The movie corner (Letterboxd)
 
-1. Write a markdown file: `blog/posts/my-post.md`
-2. Add an entry to `blog/posts.json`:
-   ```json
-   {
-     "slug": "my-post",
-     "title": "My Post",
-     "date": "2026-06-11",
-     "summary": "One line about it.",
-     "tags": ["games"]
-   }
-   ```
-3. Commit + push. Done.
-
-### Want the blog on its own domain later?
-
-Right now the blog lives at `/blog/` on the same site — simplest possible setup, one repo, one
-deploy. If you later buy a domain, you have two options:
-
-- **Same site, custom domain:** add your domain in repo Settings → Pages → Custom domain
-  (e.g. `advay.dev`); the blog becomes `advay.dev/blog/`. Recommended.
-- **Separate blog subdomain:** GitHub Pages allows one custom domain per repo, so you'd split
-  `blog/` into its own repo with its own Pages site and point a `blog.advay.dev` CNAME record at it.
-  More moving parts; only worth it if you want the separation.
-
-## Letterboxd section
-
-The MOVIES section shows the four favorites and recent reviews from
-[letterboxd.com/Girff](https://letterboxd.com/Girff/). It reads `assets/data/letterboxd.json`,
-which is refreshed by `scripts/fetch_letterboxd.py`:
+The MOVIES section on the homepage shows the four favorites and the two latest reviews from
+[letterboxd.com/Girff](https://letterboxd.com/Girff/); `movies.html` is the full page — the exact
+rating histogram (click a bar to see the films in it), this month's reviews (5 per page), and the
+watchlist. Everything reads `assets/data/letterboxd.json`, refreshed by
+`scripts/fetch_letterboxd.py`:
 
 - **Automatically:** `.github/workflows/letterboxd.yml` runs daily (and via the
   "Run workflow" button under the repo's Actions tab) and commits the JSON when it changes.
   GitHub Pages redeploys automatically after the commit.
 - **Manually:** `python3 scripts/fetch_letterboxd.py` locally, then commit.
 
-Data comes from Letterboxd's public RSS feed (reviews) and your public profile page
-(favorites + posters). To change the account, set the username in `scripts/fetch_letterboxd.py`
-(or the `LETTERBOXD_USER` env var). Note: GitHub disables cron schedules on repos with no
-activity for ~60 days — pushing anything re-enables it.
+Data comes from Letterboxd's public RSS feed (reviews) and public profile pages (favorites,
+rating distribution, recently rated films, watchlist). Letterboxd bot-blocks paginated sub-pages,
+so the histogram drill-down lists cover the ~72 most recently rated films (the bar *counts* are
+always exact) and each bar links out to the full list on Letterboxd. To change the account, set
+the username in `scripts/fetch_letterboxd.py` (or the `LETTERBOXD_USER` env var). Note: GitHub
+disables cron schedules on repos with no activity for ~60 days — pushing anything re-enables it.
 
 ## Adding a project
 
@@ -104,21 +82,18 @@ screenshot in `assets/img/`. Delete the "empty joker slot" once you've got a few
 ## Structure
 
 ```
-index.html          main page (hero, about, skills game, projects, achievements, blog, movies, resume)
+index.html          main page (hero, about, skills game, projects, achievements, movies, resume)
+movies.html         the movie corner: rating histogram, monthly reviews, watchlist
 resume.html         traditional print-ready resume (source of assets/resume.pdf)
 scripts/fetch_letterboxd.py   pulls Letterboxd data into assets/data/letterboxd.json
 .github/workflows/letterboxd.yml  daily auto-refresh of the Letterboxd data
-blog/index.html     blog list ("packs")
-blog/post.html      renders one markdown post (?p=slug)
-blog/posts.json     post index
-blog/posts/*.md     the posts themselves
 css/style.css       all styling (Balatro look recreated in CSS, incl. pixel-corner UI)
 js/background.js    WebGL swirling-paint shader background
 js/cards.js         card physics: fan layout, hover tilt, drag to reorder, snap-back, sfx
 js/game.js          skills mini-game: deals, poker scoring, discards, boss blinds
 js/main.js          page wiring + CONFIG
-js/blog.js          blog list/post logic
-js/letterboxd.js    renders the movies section from the fetched JSON
+js/letterboxd.js    renders the homepage movies section from the fetched JSON
+js/movies.js        renders movies.html (histogram, monthly reviews, watchlist)
 assets/fonts/       m6x11.ttf
 assets/img/         your photo + screenshots go here
 assets/resume.pdf   the downloadable resume

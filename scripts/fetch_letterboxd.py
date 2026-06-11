@@ -4,7 +4,9 @@
 Pulls:
   - recent reviews from the public RSS feed (letterboxd.com/<user>/rss/)
   - the four favorite films from the public profile page
-  - every film rating (for the histogram) from the /films/ pages
+  - the exact rating distribution from the profile's histogram widget
+  - a sample of recently rated films (first /films/ page; deeper pages are
+    bot-blocked by Letterboxd) for the histogram drill-down lists
   - the watchlist (first page of posters + total count)
 
 Posters are resolved via each film page's LD+JSON metadata.
@@ -19,6 +21,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from xml.etree import ElementTree
@@ -35,10 +39,23 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 NS = {"letterboxd": "https://letterboxd.com", "tmdb": "https://themoviedb.org"}
 
 
-def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+def get(url, retries=3):
+    """Polite fetch: small delay between requests, backoff on 403/429
+    (Letterboxd rate-limits request bursts)."""
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                body = resp.read().decode("utf-8", errors="replace")
+            time.sleep(0.4)
+            return body
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429) and attempt < retries - 1:
+                wait = 5 * (attempt + 1)
+                print(f"  {e.code} on {url} — retrying in {wait}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
 
 
 def strip_tags(s):
@@ -114,9 +131,8 @@ def film_poster(slug):
     return None
 
 
-def fetch_favorites(user):
-    page = get(f"https://letterboxd.com/{user}/")
-    sec = re.search(r'<section id="favourites".*?</section>', page, re.S)
+def parse_favorites(profile_html):
+    sec = re.search(r'<section id="favourites".*?</section>', profile_html, re.S)
     if not sec:
         return []
     favorites = []
@@ -131,35 +147,47 @@ def fetch_favorites(user):
     return favorites[:4]
 
 
-def fetch_ratings(user):
-    """Every rated film: the /films/ grid pairs each poster with a
-    'rated-N' span (N = stars * 2) inside the same <li>."""
-    ratings = []
-    page_count = None
-    page_num = 1
-    while page_num <= (page_count or 1):
-        url = f"https://letterboxd.com/{user}/films/"
-        if page_num > 1:
-            url += f"page/{page_num}/"
-        page = get(url)
-        if page_count is None:
-            page_count = min(last_page(page, "films"), MAX_RATING_PAGES)
+def parse_histogram(profile_html):
+    """The profile sidebar embeds the full rating distribution:
+    ten <tr class="column"> rows (0.5 stars … 5 stars, in order), each with
+    a tooltip like '12 ★★★½ ratings (15%)'."""
+    sec = re.search(r'<div class="rating-histogram">.*?</table>', profile_html, re.S)
+    if not sec:
+        return {"total": 0, "buckets": []}
+    buckets = []
+    rows = re.findall(r'<tr class="column".*?</tr>', sec.group(0), re.S)
+    for i, row in enumerate(rows[:10]):
+        count = re.search(r'title="([\d,]+)\s', row)
+        href = re.search(r'href="([^"]+)"', row)
+        buckets.append({
+            "rating": (i + 1) / 2.0,
+            "count": int(count.group(1).replace(",", "")) if count else 0,
+            "url": ("https://letterboxd.com" + href.group(1)) if href else None,
+        })
+    return {"total": sum(b["count"] for b in buckets), "buckets": buckets}
 
-        for li in re.finditer(r'<li class="griditem">(.*?)</li>', page, re.S):
-            block = li.group(1)
-            items = list(grid_items(block))
-            rated = re.search(r"rated-(\d+)", block)
-            if not items or not rated:
-                continue  # watched but unrated
-            title, year = split_name(items[0][0])
-            ratings.append({
-                "title": title,
-                "year": year,
-                "url": f"https://letterboxd.com/film/{items[0][1]}/",
-                "rating": int(rated.group(1)) / 2.0,
-            })
-        page_num += 1
-    return ratings
+
+def fetch_rated_films(user):
+    """Recently rated films, for the histogram drill-down lists. Only the
+    first /films/ page is reachable (Letterboxd bot-blocks deeper pages),
+    so this is a sample of the most recent ~72; the histogram counts above
+    are still exact."""
+    page = get(f"https://letterboxd.com/{user}/films/")
+    films = []
+    for li in re.finditer(r'<li class="griditem">(.*?)</li>', page, re.S):
+        block = li.group(1)
+        items = list(grid_items(block))
+        rated = re.search(r"rated-(\d+)", block)
+        if not items or not rated:
+            continue  # watched but unrated
+        title, year = split_name(items[0][0])
+        films.append({
+            "title": title,
+            "year": year,
+            "url": f"https://letterboxd.com/film/{items[0][1]}/",
+            "rating": int(rated.group(1)) / 2.0,
+        })
+    return films
 
 
 def fetch_watchlist(user):
@@ -183,17 +211,20 @@ def fetch_watchlist(user):
 
 def main():
     print(f"fetching letterboxd data for {USERNAME}…")
+    profile_html = get(f"https://letterboxd.com/{USERNAME}/")
     data = {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "username": USERNAME,
         "profile": f"https://letterboxd.com/{USERNAME}/",
-        "favorites": fetch_favorites(USERNAME),
+        "favorites": parse_favorites(profile_html),
+        "histogram": parse_histogram(profile_html),
         "reviews": fetch_reviews(USERNAME),
-        "ratings": fetch_ratings(USERNAME),
+        "ratings": fetch_rated_films(USERNAME),
         "watchlist": fetch_watchlist(USERNAME),
     }
     print(f"  {len(data['favorites'])} favorites, {len(data['reviews'])} reviews, "
-          f"{len(data['ratings'])} ratings, watchlist {data['watchlist']['total']}")
+          f"{data['histogram']['total']} rated ({len(data['ratings'])} in sample), "
+          f"watchlist {data['watchlist']['total']}")
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
