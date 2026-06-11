@@ -1,6 +1,7 @@
-/* The skills section as a playable blind: random ranks each deal, rare editions,
+/* The skills section as a playable blind: random ranks each deal,
    real poker-hand scoring, discards, and an endless ladder of CS-themed boss blinds.
-   Suits always map to skill categories; only ranks and editions reshuffle. */
+   Suits always map to skill categories; only ranks reshuffle.
+   Played cards leave the table too — no replaying the same hand. */
 (function () {
   'use strict';
 
@@ -19,28 +20,17 @@
     { name: 'HTML/CSS',   suit: 'spade' },
     { name: 'Swift',      suit: 'spade' },
     // frameworks & libraries — hearts
-    { name: 'XNA', suit: 'heart' },
-    { name: 'React',          suit: 'heart' },
+    { name: 'XNA',   suit: 'heart' },
+    { name: 'React', suit: 'heart' },
     // dev skills — diamonds
     { name: 'Git & GitHub',  suit: 'diamond' },
-    { name: 'Agile / Scrum', suit: 'diamond' },
-    { name: 'Algorithmic Problem Solving', suit: 'diamond' }
+    { name: 'Agile / Scrum', suit: 'diamond' }
   ];
 
   var SUIT_GLYPH = { spade: '♠', heart: '♥', diamond: '♦', club: '♣' };
   var SUIT_COLOR = { spade: 'suit-black', club: 'suit-black', heart: 'suit-red', diamond: 'suit-red' };
   var CAT_LABEL = { spade: 'LANGUAGE', heart: 'FRAMEWORK', diamond: 'SKILL', club: 'MISC' };
   var RANK_NAME = { 11: 'J', 12: 'Q', 13: 'K', 14: 'A' };
-
-  // editions: weight = deal probability; bonuses mirror the game's flavor
-  var EDITIONS = [
-    { id: 'foil',        label: 'FOIL',       weight: 0.06, chips: 50 },
-    { id: 'holographic', label: 'HOLOGRAPHIC', weight: 0.05, mult: 10 },
-    { id: 'steel',       label: 'STEEL',      weight: 0.04, xmult: 1.25 },
-    { id: 'gold',        label: 'GOLD',       weight: 0.04, chips: 20 },
-    { id: 'polychrome',  label: 'POLYCHROME', weight: 0.02, xmult: 1.5 },
-    { id: 'glass',       label: 'GLASS',      weight: 0.01, xmult: 2, fragile: true }
-  ];
 
   var HAND_TYPES = {
     'five-of-a-kind':  { label: 'FIVE OF A KIND',  chips: 120, mult: 12 },
@@ -115,30 +105,15 @@
 
   function chipValue(v) { return v === 14 ? 11 : Math.min(v, 10); }
 
-  function rollEdition() {
-    var r = Math.random();
-    for (var i = 0; i < EDITIONS.length; i++) {
-      if (r < EDITIONS[i].weight) return EDITIONS[i];
-      r -= EDITIONS[i].weight;
-    }
-    return null;
-  }
-
   function dealCard(card) {
     var v = randRank();
-    var ed = rollEdition();
     card.dataset.rankval = String(v);
-    card.dataset.edition = ed ? ed.id : '';
-
-    EDITIONS.forEach(function (e) { card.classList.remove('ed-' + e.id); });
-    if (ed) card.classList.add('ed-' + ed.id);
 
     var label = rankLabel(v);
     var glyph = SUIT_GLYPH[card.dataset.suit];
     card.querySelectorAll('.corner').forEach(function (c) {
       c.innerHTML = '<span>' + label + '</span><span>' + glyph + '</span>';
     });
-    card.querySelector('.edition-label').textContent = ed ? ed.label : '';
   }
 
   function buildCard(s, i) {
@@ -150,7 +125,6 @@
         '<div class="corner tl"></div>' +
         '<div class="bname">' + s.name + '</div>' +
         '<div class="cat">' + CAT_LABEL[s.suit] + '</div>' +
-        '<div class="edition-label"></div>' +
         '<div class="corner br"></div>' +
       '</div>';
     dealCard(card);
@@ -158,12 +132,6 @@
   }
 
   SKILLS.forEach(function (s, i) { handEl.appendChild(buildCard(s, i)); });
-
-  var deck = document.createElement('div');
-  deck.className = 'deck';
-  deck.setAttribute('data-count', SKILLS.length + '/52');
-  deck.setAttribute('aria-hidden', 'true');
-  handEl.appendChild(deck);
 
   var hand = new window.BalatroCards.Hand(handEl, {
     maxSelect: 5,
@@ -233,18 +201,12 @@
     var type = HAND_TYPES[detectHand(cards)];
     var chips = type.chips;
     var mult = type.mult;
-    var xmult = 1;
 
     cards.forEach(function (c) {
       chips += chipValue(parseInt(c.dataset.rankval, 10));
-      var ed = EDITIONS.find(function (e) { return e.id === c.dataset.edition; });
-      if (!ed) return;
-      if (ed.chips) chips += ed.chips;
-      if (ed.mult) mult += ed.mult;
-      if (ed.xmult) xmult *= ed.xmult;
     });
 
-    return { type: type, chips: chips, mult: mult, xmult: xmult, total: Math.round(chips * mult * xmult) };
+    return { type: type, chips: chips, mult: mult, total: chips * mult };
   }
 
   function updatePreview(n) {
@@ -252,7 +214,7 @@
     var s = scoreHand(selectedCards());
     ui.preview.innerHTML =
       '<b>' + s.type.label + '</b> — <span class="num-blue">' + fmt(s.chips) + '</span>' +
-      ' × <span class="num-red">' + fmt(Math.round(s.mult * s.xmult * 100) / 100) + '</span>' +
+      ' × <span class="num-red">' + fmt(s.mult) + '</span>' +
       (n === 5 ? ' <span class="muted">(hand full)</span>' : '');
   }
 
@@ -270,7 +232,7 @@
 
   function flyOutAndRedeal(cards, done) {
     var H = handEl.clientHeight;
-    cards.forEach(function (c, i) {
+    cards.forEach(function (c) {
       c.classList.remove('selected');
       c.classList.add('flying');
       c.style.transform = 'translate(' + (c._home.x + 60) + 'px, ' + (H + 240) + 'px) rotate(38deg)';
@@ -321,22 +283,18 @@
       SFX.chips();
       toast('<b>' + s.type.label + '</b><br>' +
         '<span class="num-blue">' + fmt(s.chips) + '</span> × ' +
-        '<span class="num-red">' + fmt(Math.round(s.mult * s.xmult * 100) / 100) + '</span>' +
+        '<span class="num-red">' + fmt(s.mult) + '</span>' +
         ' = <b class="num-gold">' + fmt(s.total) + '</b>');
-
-      // glass cards can shatter after scoring
-      var glass = cards.filter(function (c) { return c.dataset.edition === 'glass' && Math.random() < 0.25; });
 
       hand.clearSelection();
       updatePreview(0);
       render();
       save();
 
+      // played cards are spent — off the table, redealt with new ranks
+      flyOutAndRedeal(cards);
+
       setTimeout(function () {
-        if (glass.length) {
-          toast('a glass card shattered!', 'toast-small');
-          flyOutAndRedeal(glass);
-        }
         if (state.roundScore >= state.target) {
           defeatBlind();
         } else if (state.hands <= 0) {

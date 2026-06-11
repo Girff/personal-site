@@ -633,33 +633,6 @@ footer.section { padding-bottom: 110px; }
 
 .skill-fallback { color: var(--text); font-size: 18px; padding: 20px; }
 
-/* deck stack in the corner of the hand */
-.deck {
-  position: absolute;
-  right: 18px;
-  bottom: 16px;
-  width: 74px;
-  aspect-ratio: 5 / 7;
-  border-radius: 8px;
-  background:
-    repeating-linear-gradient(45deg, rgba(0,0,0,.15) 0 8px, transparent 8px 16px),
-    linear-gradient(160deg, #c8423a, #8e2b25);
-  box-shadow:
-    inset 0 0 0 2px rgba(255, 255, 255, .35),
-    2px 2px 0 #7c241f, 4px 4px 0 #6b1d19, 6px 6px 0 #5a1714,
-    8px 10px 14px rgba(0, 0, 0, .5);
-  pointer-events: none;
-}
-
-.deck::after {
-  content: attr(data-count);
-  position: absolute;
-  bottom: -26px;
-  right: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
 /* ===== projects ===== */
 .project-row {
   display: flex;
@@ -1077,7 +1050,6 @@ body.crt-off .crt-overlay { display: none; }
   .portrait-card { width: 210px; }
 
   .hand { height: 250px; }
-  .deck { display: none; }
 
   .panel { padding: 20px 18px; }
 
