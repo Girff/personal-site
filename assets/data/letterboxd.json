@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T06:18:38+00:00",
+  "updated": "2026-06-12T10:40:42+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 183,
+    "total": 184,
     "buckets": [
       {
         "rating": 0.5,
@@ -78,12 +78,22 @@
       },
       {
         "rating": 5.0,
-        "count": 24,
+        "count": 25,
         "url": "https://letterboxd.com/girff/films/ratings/rated/5/by/date/"
       }
     ]
   },
   "reviews": [
+    {
+      "title": "Lost in Starlight",
+      "year": "2025",
+      "rating": 5.0,
+      "watched": "2026-06-11",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/lost-in-starlight/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/5/1/3/2/4/1051324-lost-in-starlight-0-600-0-900-crop.jpg?v=513c0821e8",
+      "review": "This movie was so so incredible, I couldn’t recommend it more. The voice acting, the animation, the directing, all outstanding. Initially, it seems like a very cliche plot, but all my expectations were subverted in the second half."
+    },
     {
       "title": "Legally Blonde",
       "year": "2001",
@@ -473,16 +483,6 @@
       "url": "https://letterboxd.com/girff/film/crazy-rich-asians/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/3/8/7/2/3/8/387238-crazy-rich-asians-0-600-0-900-crop.jpg?v=21695f4b1f",
       "review": "some really nice setsfun movie 👍"
-    },
-    {
-      "title": "Whiplash",
-      "year": "2014",
-      "rating": 5.0,
-      "watched": "2025-11-25",
-      "rewatch": true,
-      "url": "https://letterboxd.com/girff/film/whiplash-2014/",
-      "poster": "https://a.ltrbxd.com/resized/sm/upload/cl/dn/kr/f1/4C9LHDxMsoYI0S3iMPZdm3Oevwo-0-600-0-900-crop.jpg?v=d13ea36528",
-      "review": "As a jazz enjoyer myself, this movie stands out above anything else I've watched. \"There are no two words in the English language more harmful than 'good job,'\" JK Simmons as Fletcher is one of the best mentor characters I've seen in any story, and it is truly haunting how he manipulates Nieman. He is selfish, rude, and plays to his students' weaknesses rather than their strengths. But that is exactly what made him great, and that is exactly what makes him so interesting.I can also really appreciate the incredible editing and camerawork that went into this. For a movie about 'just' drumming,…"
     }
   ],
   "ratings": [
@@ -689,6 +689,12 @@
       "year": "2025",
       "url": "https://letterboxd.com/film/dan-da-dan-evil-eye/",
       "rating": 3.0
+    },
+    {
+      "title": "Lost in Starlight",
+      "year": "2025",
+      "url": "https://letterboxd.com/film/lost-in-starlight/",
+      "rating": 5.0
     },
     {
       "title": "Mission: Impossible – The Final Reckoning",
@@ -911,12 +917,6 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/ant-man-and-the-wasp-quantumania/",
       "rating": 1.0
-    },
-    {
-      "title": "Avatar: The Way of Water",
-      "year": "2022",
-      "url": "https://letterboxd.com/film/avatar-the-way-of-water/",
-      "rating": 3.0
     }
   ],
   "watchlist": {
@@ -1016,7 +1016,7 @@
         "title": "The Social Reckoning",
         "year": "2026",
         "url": "https://letterboxd.com/film/the-social-reckoning/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/6/4/6/6/9/1164669-the-social-reckoning-0-230-0-345-crop.jpg?v=7dcc372fc3"
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/6/4/6/6/9/1164669-the-social-reckoning-0-230-0-345-crop.jpg?v=2f1446aede"
       },
       {
         "title": "Clayface",
