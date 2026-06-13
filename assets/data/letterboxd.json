@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T10:40:42+00:00",
+  "updated": "2026-06-13T09:34:53+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -53,7 +53,7 @@
       },
       {
         "rating": 2.5,
-        "count": 15,
+        "count": 16,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2%C2%BD/by/date/"
       },
       {
@@ -73,7 +73,7 @@
       },
       {
         "rating": 4.5,
-        "count": 30,
+        "count": 29,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "F1",
+      "year": "2025",
+      "rating": 4.5,
+      "watched": "2026-06-12",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/f1/1/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/8/1/7/9/7/7/817977-f1-the-movie-0-600-0-900-crop.jpg?v=f5ae2b99b9",
+      "review": "To be honest, as I was rewatching the movie I was thinking of lowering the previous score I gave it for this time, but man do those racing scenes just pull me in. It’s pretty obvious the guy who directed this also directed Top Gun: Maverick. The action is just as good."
+    },
     {
       "title": "Lost in Starlight",
       "year": "2025",
@@ -473,16 +483,6 @@
       "url": "https://letterboxd.com/girff/film/bugonia/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-600-0-900-crop.jpg?v=4c6649150e",
       "review": "what the actual HELL was that ending they made emma stone bald like a stone"
-    },
-    {
-      "title": "Crazy Rich Asians",
-      "year": "2018",
-      "rating": 3.0,
-      "watched": "2025-11-27",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/crazy-rich-asians/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/3/8/7/2/3/8/387238-crazy-rich-asians-0-600-0-900-crop.jpg?v=21695f4b1f",
-      "review": "some really nice setsfun movie 👍"
     }
   ],
   "ratings": [
@@ -676,7 +676,7 @@
       "title": "F1",
       "year": "2025",
       "url": "https://letterboxd.com/film/f1/",
-      "rating": 4.5
+      "rating": 2.5
     },
     {
       "title": "100 METERS",
