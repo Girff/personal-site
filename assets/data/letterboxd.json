@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T09:34:53+00:00",
+  "updated": "2026-06-14T09:57:00+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 184,
+    "total": 185,
     "buckets": [
       {
         "rating": 0.5,
@@ -43,7 +43,7 @@
       },
       {
         "rating": 1.5,
-        "count": 5,
+        "count": 6,
         "url": "https://letterboxd.com/girff/films/ratings/rated/1%C2%BD/by/date/"
       },
       {
@@ -835,6 +835,12 @@
       "rating": 1.0
     },
     {
+      "title": "Night Swim",
+      "year": "2024",
+      "url": "https://letterboxd.com/film/night-swim-2024/",
+      "rating": 1.5
+    },
+    {
       "title": "Anyone But You",
       "year": "2023",
       "url": "https://letterboxd.com/film/anyone-but-you/",
@@ -911,12 +917,6 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/shazam-fury-of-the-gods/",
       "rating": 2.0
-    },
-    {
-      "title": "Ant-Man and the Wasp: Quantumania",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/ant-man-and-the-wasp-quantumania/",
-      "rating": 1.0
     }
   ],
   "watchlist": {
