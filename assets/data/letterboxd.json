@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T09:57:00+00:00",
+  "updated": "2026-06-15T12:43:52+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -920,7 +920,7 @@
     }
   ],
   "watchlist": {
-    "total": 59,
+    "total": 58,
     "films": [
       {
         "title": "It's Such a Beautiful Day",
@@ -1031,12 +1031,6 @@
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/5/3/5/9/3/153593-avatar-4-0-230-0-345-crop.jpg?v=59f8c1a2bd"
       },
       {
-        "title": "Untitled Jordan Peele Film",
-        "year": "",
-        "url": "https://letterboxd.com/film/untitled-jordan-peele-film/",
-        "poster": null
-      },
-      {
         "title": "Digger",
         "year": "2026",
         "url": "https://letterboxd.com/film/digger-2026/",
@@ -1088,6 +1082,12 @@
         "title": "Chainsaw Man – The Movie: Reze Arc",
         "year": "2025",
         "url": "https://letterboxd.com/film/chainsaw-man-the-movie-reze-arc/",
+        "poster": null
+      },
+      {
+        "title": "Captain America: The Winter Soldier",
+        "year": "2014",
+        "url": "https://letterboxd.com/film/captain-america-the-winter-soldier/",
         "poster": null
       }
     ]
