@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T10:57:46+00:00",
+  "updated": "2026-06-20T09:43:04+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 185,
+    "total": 186,
     "buckets": [
       {
         "rating": 0.5,
@@ -68,7 +68,7 @@
       },
       {
         "rating": 4.0,
-        "count": 32,
+        "count": 33,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Disclosure Day",
+      "year": "2026",
+      "rating": 4.0,
+      "watched": "2026-06-19",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/disclosure-day/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/5/9/2/5/1/1159251-disclosure-day-0-600-0-900-crop.jpg?v=9ae810e4bb",
+      "review": "This Steven Spielberg guy is pretty good at directing movies… if he keeps this up he could really go places."
+    },
     {
       "title": "F1",
       "year": "2025",
@@ -473,19 +483,15 @@
       "url": "https://letterboxd.com/girff/film/wake-up-dead-man/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/7/2/9/1/1/3/729113-wake-up-dead-man-0-600-0-900-crop.jpg?v=85f3366617",
       "review": "James Bond?"
-    },
-    {
-      "title": "Bugonia",
-      "year": "2025",
-      "rating": 4.5,
-      "watched": "2025-11-28",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/bugonia/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-600-0-900-crop.jpg?v=4c6649150e",
-      "review": "what the actual HELL was that ending they made emma stone bald like a stone"
     }
   ],
   "ratings": [
+    {
+      "title": "Disclosure Day",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/disclosure-day/",
+      "rating": 4.0
+    },
     {
       "title": "Backrooms",
       "year": "2026",
@@ -911,16 +917,10 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/the-super-mario-bros-movie/",
       "rating": 3.0
-    },
-    {
-      "title": "Shazam! Fury of the Gods",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/shazam-fury-of-the-gods/",
-      "rating": 2.0
     }
   ],
   "watchlist": {
-    "total": 58,
+    "total": 57,
     "films": [
       {
         "title": "It's Such a Beautiful Day",
@@ -1055,12 +1055,6 @@
         "poster": null
       },
       {
-        "title": "Disclosure Day",
-        "year": "2026",
-        "url": "https://letterboxd.com/film/disclosure-day/",
-        "poster": null
-      },
-      {
         "title": "Spider-Man: Brand New Day",
         "year": "2026",
         "url": "https://letterboxd.com/film/spider-man-brand-new-day/",
@@ -1088,6 +1082,12 @@
         "title": "Captain America: The Winter Soldier",
         "year": "2014",
         "url": "https://letterboxd.com/film/captain-america-the-winter-soldier/",
+        "poster": null
+      },
+      {
+        "title": "Soul",
+        "year": "2020",
+        "url": "https://letterboxd.com/film/soul-2020/",
         "poster": null
       }
     ]
