@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T08:50:12+00:00",
+  "updated": "2026-06-28T09:33:25+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -53,7 +53,7 @@
       },
       {
         "rating": 2.5,
-        "count": 16,
+        "count": 15,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2%C2%BD/by/date/"
       },
       {
@@ -68,7 +68,7 @@
       },
       {
         "rating": 4.0,
-        "count": 32,
+        "count": 33,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
@@ -688,7 +688,7 @@
       "title": "F1",
       "year": "2025",
       "url": "https://letterboxd.com/film/f1/",
-      "rating": 2.5
+      "rating": 4.0
     },
     {
       "title": "100 METERS",
