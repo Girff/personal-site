@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T10:01:50+00:00",
+  "updated": "2026-07-01T10:15:18+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 188,
+    "total": 189,
     "buckets": [
       {
         "rating": 0.5,
@@ -53,7 +53,7 @@
       },
       {
         "rating": 2.5,
-        "count": 15,
+        "count": 16,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Passengers",
+      "year": "2016",
+      "rating": 2.5,
+      "watched": "2026-06-30",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/passengers-2016/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/7v/7c/8u/gl/mJJV2pv6Dh1WiZV0SxfuFSvXWfV-0-600-0-900-crop.jpg?v=1d896aa116",
+      "review": "I have.. mixed feelings about this movie. First, the good: the acting is quite good for most of the runtime from both Jennifer Lawrence and Chris Pratt. Also, the premise is a really really good idea that ties in heavy themes of consent, romance, and betrayal. However, everything seems to be cast off for a typical action-packed ending sequence in the last thirty minutes, leaving me dissapointed. This movie had potential to be great, it really did, but it falls flat in too many areas for me to give it a high rating."
+    },
     {
       "title": "Michael",
       "year": "2026",
@@ -473,16 +483,6 @@
       "url": "https://letterboxd.com/girff/film/marty-supreme/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/4/9/9/1197499-marty-supreme-0-600-0-900-crop.jpg?v=b14a26bb43",
       "review": "Don’t be fooled by the trailers, this is so much more than a sports movie. I have a purpose. And if you think that's some sort of blessing, it's not. It means I have an obligation to see a very specific thing through, and with that obligation comes sacrifice. This quote perfectly embodies the message of Marty Supreme. Theres not much else I can say about this movie… it’s a story about perseverance—about staying true to yourself no matter the circumstances. Hands down one of my favorite movies of all time."
-    },
-    {
-      "title": "Wonder",
-      "year": "2017",
-      "rating": 3.0,
-      "watched": "2025-12-18",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/wonder-2017/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/3/4/1/4/4/0/341440-wonder-0-600-0-900-crop.jpg?v=a73db5a6e9",
-      "review": "too wholesome and happyI like my movies sad and depressing"
     }
   ],
   "ratings": [
