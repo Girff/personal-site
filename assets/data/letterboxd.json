@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T09:35:09+00:00",
+  "updated": "2026-07-04T09:01:19+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 189,
+    "total": 190,
     "buckets": [
       {
         "rating": 0.5,
@@ -68,7 +68,7 @@
       },
       {
         "rating": 4.0,
-        "count": 33,
+        "count": 34,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Toy Story 5",
+      "year": "2026",
+      "rating": 4.0,
+      "watched": "2026-07-03",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/toy-story-5/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/7/1/8/6/977186-toy-story-5-0-600-0-900-crop.jpg?v=d0ac6a7d01",
+      "review": "A very very timely sequel that deals with a real issue with kids nowadays… and it handles that idea perfectly. I could see more from the Toy Story franchise."
+    },
     {
       "title": "Passengers",
       "year": "2016",
@@ -473,19 +483,15 @@
       "url": "https://letterboxd.com/girff/film/knives-out-2019/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/5/3/7/0/475370-knives-out-0-600-0-900-crop.jpg?v=7da76d742c",
       "review": "I thought I knew what’d happen after 40 mins, but 40 mins later that theory went out the window in favor of a new one.Yet another 40 mins later my second theory proved to be false, and Knives Out left me completely flabbergasted in how it ended. The Knives Out movies are all very good… I probably should’ve watched this one first instead of last. Well done James Bond—I mean Benoit Blanc 👍"
-    },
-    {
-      "title": "Marty Supreme",
-      "year": "2025",
-      "rating": 5.0,
-      "watched": "2025-12-24",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/marty-supreme/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/4/9/9/1197499-marty-supreme-0-600-0-900-crop.jpg?v=b14a26bb43",
-      "review": "Don’t be fooled by the trailers, this is so much more than a sports movie. I have a purpose. And if you think that's some sort of blessing, it's not. It means I have an obligation to see a very specific thing through, and with that obligation comes sacrifice. This quote perfectly embodies the message of Marty Supreme. Theres not much else I can say about this movie… it’s a story about perseverance—about staying true to yourself no matter the circumstances. Hands down one of my favorite movies of all time."
     }
   ],
   "ratings": [
+    {
+      "title": "Toy Story 5",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/toy-story-5/",
+      "rating": 4.0
+    },
     {
       "title": "Disclosure Day",
       "year": "2026",
@@ -911,16 +917,10 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/elemental-2023/",
       "rating": 3.0
-    },
-    {
-      "title": "Guardians of the Galaxy Vol. 3",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/guardians-of-the-galaxy-vol-3/",
-      "rating": 4.5
     }
   ],
   "watchlist": {
-    "total": 55,
+    "total": 54,
     "films": [
       {
         "title": "It's Such a Beautiful Day",
@@ -1043,12 +1043,6 @@
         "poster": null
       },
       {
-        "title": "Toy Story 5",
-        "year": "2026",
-        "url": "https://letterboxd.com/film/toy-story-5/",
-        "poster": null
-      },
-      {
         "title": "Avengers: Secret Wars",
         "year": "2027",
         "url": "https://letterboxd.com/film/avengers-secret-wars/",
@@ -1088,6 +1082,12 @@
         "title": "Soul",
         "year": "2020",
         "url": "https://letterboxd.com/film/soul-2020/",
+        "poster": null
+      },
+      {
+        "title": "Rental Family",
+        "year": "2025",
+        "url": "https://letterboxd.com/film/rental-family-2025/",
         "poster": null
       }
     ]
