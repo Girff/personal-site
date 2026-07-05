@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T09:01:19+00:00",
+  "updated": "2026-07-05T09:23:00+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -920,8 +920,20 @@
     }
   ],
   "watchlist": {
-    "total": 54,
+    "total": 56,
     "films": [
+      {
+        "title": "Minions & Monsters",
+        "year": "2026",
+        "url": "https://letterboxd.com/film/minions-monsters-2026/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996"
+      },
+      {
+        "title": "Tuner",
+        "year": "2025",
+        "url": "https://letterboxd.com/film/tuner/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/8/7/8/1234878-tuner-0-600-0-900-crop.jpg?v=075156069b"
+      },
       {
         "title": "It's Such a Beautiful Day",
         "year": "2012",
@@ -1022,13 +1034,13 @@
         "title": "Clayface",
         "year": "2026",
         "url": "https://letterboxd.com/film/clayface/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/8/4/6/3/6/1284636-clayface-0-600-0-900-crop.jpg?v=eb305849d5"
+        "poster": null
       },
       {
         "title": "Avatar 4",
         "year": "2029",
         "url": "https://letterboxd.com/film/avatar-4/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/5/3/5/9/3/153593-avatar-4-0-600-0-900-crop.jpg?v=59f8c1a2bd"
+        "poster": null
       },
       {
         "title": "Digger",
@@ -1076,18 +1088,6 @@
         "title": "Captain America: The Winter Soldier",
         "year": "2014",
         "url": "https://letterboxd.com/film/captain-america-the-winter-soldier/",
-        "poster": null
-      },
-      {
-        "title": "Soul",
-        "year": "2020",
-        "url": "https://letterboxd.com/film/soul-2020/",
-        "poster": null
-      },
-      {
-        "title": "Rental Family",
-        "year": "2025",
-        "url": "https://letterboxd.com/film/rental-family-2025/",
         "poster": null
       }
     ]
