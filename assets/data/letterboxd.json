@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T08:31:52+00:00",
+  "updated": "2026-07-13T09:47:59+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 190,
+    "total": 191,
     "buckets": [
       {
         "rating": 0.5,
@@ -68,7 +68,7 @@
       },
       {
         "rating": 4.0,
-        "count": 34,
+        "count": 35,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Gone Girl",
+      "year": "2014",
+      "rating": 4.0,
+      "watched": "2026-07-12",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/gone-girl/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/9/8/5/7/149857-gone-girl-0-600-0-900-crop.jpg?v=dfe3c8018b",
+      "review": "This might have been the biggest turnaround I’ve had on my opinion of a movie from beginning to end I’ve ever had. The start seemed to be riddled with issues and plot holes and outright chaos, but every loose end is (mostly) tied up and the ending is truly satisfying. I love how there isn’t a single likable character in the whole thing, it’s just one bad decision and horrible person after another."
+    },
     {
       "title": "Toy Story 5",
       "year": "2026",
@@ -473,16 +483,6 @@
       "url": "https://letterboxd.com/girff/film/five-nights-at-freddys-2/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/1/1/8/8/3/1111883-five-nights-at-freddys-2-0-600-0-900-crop.jpg?v=f382c9b76f",
       "review": "Animatronics… ASSEMBLE"
-    },
-    {
-      "title": "Knives Out",
-      "year": "2019",
-      "rating": 4.5,
-      "watched": "2025-12-25",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/knives-out-2019/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/5/3/7/0/475370-knives-out-0-600-0-900-crop.jpg?v=7da76d742c",
-      "review": "I thought I knew what’d happen after 40 mins, but 40 mins later that theory went out the window in favor of a new one.Yet another 40 mins later my second theory proved to be false, and Knives Out left me completely flabbergasted in how it ended. The Knives Out movies are all very good… I probably should’ve watched this one first instead of last. Well done James Bond—I mean Benoit Blanc 👍"
     }
   ],
   "ratings": [
