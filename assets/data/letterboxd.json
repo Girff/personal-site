@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13T09:47:59+00:00",
+  "updated": "2026-07-14T08:28:19+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 191,
+    "total": 194,
     "buckets": [
       {
         "rating": 0.5,
@@ -53,12 +53,12 @@
       },
       {
         "rating": 2.5,
-        "count": 16,
+        "count": 17,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2%C2%BD/by/date/"
       },
       {
         "rating": 3.0,
-        "count": 25,
+        "count": 26,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3/by/date/"
       },
       {
@@ -73,7 +73,7 @@
       },
       {
         "rating": 4.5,
-        "count": 29,
+        "count": 30,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,26 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Click",
+      "year": "2006",
+      "rating": 3.0,
+      "watched": "2026-07-13",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/click/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/2/5/5/47255-click-0-600-0-900-crop.jpg?v=21dfe24b64",
+      "review": "I came expecting a dumb Adam Sandler film, and that’s exactly what I got. However, there were some good messages about work-life balance sprinkled into the madness so I gotta give it some credit."
+    },
+    {
+      "title": "Ex Machina",
+      "year": "2015",
+      "rating": 4.5,
+      "watched": "2026-07-13",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/ex-machina-2015/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/8/7/9/8/6/187986-ex-machina-0-600-0-900-crop.jpg?v=2b4212d498",
+      "review": "Ex Machina is beautifully shot, with equally as beautiful of a score to go along with it. It feels like a movie that I could sit and think about for a long time even after finishing it. It’s message isn’t as clear-cut as other movies that tell the same story about power dynamics in relationships, but I’d say that makes it more powerful; you have to find the message regret rather than be presented with it."
+    },
     {
       "title": "Gone Girl",
       "year": "2014",
@@ -463,26 +483,6 @@
       "url": "https://letterboxd.com/girff/film/the-rip-2026/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/8/7/4/4/6/1187446-the-rip-2026-0-600-0-900-crop.jpg?v=d7686b3035",
       "review": "Pretty good for a Netflix movie 🤔The first act was pretty slow, not much buildup. The second and third acts do a lot better at building suspense, but the ending wasn’t the best to me."
-    },
-    {
-      "title": "Sinister",
-      "year": "2012",
-      "rating": 2.5,
-      "watched": "2025-12-31",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/sinister/",
-      "poster": "https://a.ltrbxd.com/resized/sm/upload/e2/ry/mu/yc/hrRYY7FcRc46Ue7h9jcKiW1xqJ3-0-600-0-900-crop.jpg?v=c994fd880e",
-      "review": "that was scary"
-    },
-    {
-      "title": "Five Nights at Freddy's 2",
-      "year": "2025",
-      "rating": 3.0,
-      "watched": "2025-12-30",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/five-nights-at-freddys-2/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/1/1/8/8/3/1111883-five-nights-at-freddys-2-0-600-0-900-crop.jpg?v=f382c9b76f",
-      "review": "Animatronics… ASSEMBLE"
     }
   ],
   "ratings": [
@@ -865,6 +865,12 @@
       "rating": 2.5
     },
     {
+      "title": "Leo",
+      "year": "2023",
+      "url": "https://letterboxd.com/film/leo-2023/",
+      "rating": 2.5
+    },
+    {
       "title": "The Marvels",
       "year": "2023",
       "url": "https://letterboxd.com/film/the-marvels/",
@@ -911,17 +917,17 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/spider-man-across-the-spider-verse/",
       "rating": 5.0
-    },
-    {
-      "title": "Elemental",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/elemental-2023/",
-      "rating": 3.0
     }
   ],
   "watchlist": {
-    "total": 56,
+    "total": 57,
     "films": [
+      {
+        "title": "Uncut Gems",
+        "year": "2019",
+        "url": "https://letterboxd.com/film/uncut-gems/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/0/4/2/6/6/404266-uncut-gems-0-600-0-900-crop.jpg?v=670cb7034d"
+      },
       {
         "title": "Minions & Monsters",
         "year": "2026",
@@ -1028,7 +1034,7 @@
         "title": "The Social Reckoning",
         "year": "2026",
         "url": "https://letterboxd.com/film/the-social-reckoning/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/6/4/6/6/9/1164669-the-social-reckoning-0-600-0-900-crop.jpg?v=a839144e33"
+        "poster": null
       },
       {
         "title": "Clayface",
@@ -1082,12 +1088,6 @@
         "title": "Chainsaw Man – The Movie: Reze Arc",
         "year": "2025",
         "url": "https://letterboxd.com/film/chainsaw-man-the-movie-reze-arc/",
-        "poster": null
-      },
-      {
-        "title": "Captain America: The Winter Soldier",
-        "year": "2014",
-        "url": "https://letterboxd.com/film/captain-america-the-winter-soldier/",
         "poster": null
       }
     ]
