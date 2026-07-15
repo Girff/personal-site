@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T08:28:19+00:00",
+  "updated": "2026-07-15T08:36:11+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 194,
+    "total": 196,
     "buckets": [
       {
         "rating": 0.5,
@@ -68,12 +68,12 @@
       },
       {
         "rating": 4.0,
-        "count": 35,
+        "count": 36,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
         "rating": 4.5,
-        "count": 30,
+        "count": 31,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,26 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Obsession",
+      "year": "2025",
+      "rating": 4.5,
+      "watched": "2026-07-15",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/obsession-2025/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "review": "I know I’m a little late to the party but let me say, I’m so glad I finally watched this movie. Obsession is one of the few movies that I’d say I have absolutely no notes on, in the sense of how it is written. The script was extremely tight, every plot thread was executed so well it truly is an impressive feat. I came out the movie extremely unsettled, but also equally as impressed. Inde Navarrette’s performance deserves just as much praise. She manages to be so expressive and clearly demonstrate the magic of the One Wish Willow purely with her mannerisms."
+    },
+    {
+      "title": "Swapped",
+      "year": "2026",
+      "rating": 4.0,
+      "watched": "2026-07-14",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/swapped-2026/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/9/0/7/8/6/8/907868-swapped-2026-0-600-0-900-crop.jpg?v=c7bb59e165",
+      "review": "It’s been a while since I’ve watched a movie that was clearly aimed towards kids, so I expected your average modern Disney movie (i.e. a not very good movie). However, I was pleasantly surprised with the amount of real lessons and heart that was put into Swapped. At its core the movie is about learning what it’s like to be in someone else’s shoes, quite literally, and that message is taught alongside a story that isn’t without its plot twists. A full package of a beautiful art style and good voice acting performances pushes this movie to really be enjoyable."
+    },
     {
       "title": "Click",
       "year": "2006",
@@ -102,7 +122,7 @@
       "rewatch": false,
       "url": "https://letterboxd.com/girff/film/ex-machina-2015/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/8/7/9/8/6/187986-ex-machina-0-600-0-900-crop.jpg?v=2b4212d498",
-      "review": "Ex Machina is beautifully shot, with equally as beautiful of a score to go along with it. It feels like a movie that I could sit and think about for a long time even after finishing it. It’s message isn’t as clear-cut as other movies that tell the same story about power dynamics in relationships, but I’d say that makes it more powerful; you have to find the message regret rather than be presented with it."
+      "review": "Ex Machina is beautifully shot, with equally as beautiful of a score to go along with it. It feels like a movie that I could sit and think about for a long time even after finishing it. It’s message isn’t as clear-cut as other movies that tell the same story about power dynamics in relationships, but I’d say that makes it more powerful; you have to find the message rather than be presented with it."
     },
     {
       "title": "Gone Girl",
@@ -463,26 +483,6 @@
       "url": "https://letterboxd.com/girff/film/kingsman-the-secret-service/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/8/2/0/0/148200-kingsman-the-secret-service-0-600-0-900-crop.jpg?v=cd49b739cf",
       "review": "I really liked the fight scenes.. the choreography and camerawork were really good. Especially the church scene."
-    },
-    {
-      "title": "The Running Man",
-      "year": "2025",
-      "rating": 3.5,
-      "watched": "2026-01-24",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-running-man-2025/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/7/1/6/1/7/8/716178-the-running-man-2025-0-600-0-900-crop.jpg?v=51fba45d13",
-      "review": "The best part of this movie is its action, especially those last few sequences. It tries really hard to have nuanced themes and complex messages, but they seem to try a little too hard."
-    },
-    {
-      "title": "The Rip",
-      "year": "2026",
-      "rating": 3.0,
-      "watched": "2026-01-18",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-rip-2026/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/8/7/4/4/6/1187446-the-rip-2026-0-600-0-900-crop.jpg?v=d7686b3035",
-      "review": "Pretty good for a Netflix movie 🤔The first act was pretty slow, not much buildup. The second and third acts do a lot better at building suspense, but the ending wasn’t the best to me."
     }
   ],
   "ratings": [
@@ -502,6 +502,12 @@
       "title": "Backrooms",
       "year": "2026",
       "url": "https://letterboxd.com/film/backrooms-2026/",
+      "rating": 4.0
+    },
+    {
+      "title": "Swapped",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/swapped-2026/",
       "rating": 4.0
     },
     {
@@ -616,6 +622,12 @@
       "title": "One Battle After Another",
       "year": "2025",
       "url": "https://letterboxd.com/film/one-battle-after-another/",
+      "rating": 4.5
+    },
+    {
+      "title": "Obsession",
+      "year": "2025",
+      "url": "https://letterboxd.com/film/obsession-2025/",
       "rating": 4.5
     },
     {
@@ -905,18 +917,6 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/barbie/",
       "rating": 4.0
-    },
-    {
-      "title": "The Flash",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/the-flash/",
-      "rating": 1.0
-    },
-    {
-      "title": "Spider-Man: Across the Spider-Verse",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/spider-man-across-the-spider-verse/",
-      "rating": 5.0
     }
   ],
   "watchlist": {
