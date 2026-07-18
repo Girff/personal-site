@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T08:28:47+00:00",
+  "updated": "2026-07-18T08:09:37+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 197,
+    "total": 198,
     "buckets": [
       {
         "rating": 0.5,
@@ -63,7 +63,7 @@
       },
       {
         "rating": 3.5,
-        "count": 37,
+        "count": 38,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Sleepy Hollow",
+      "year": "1999",
+      "rating": 3.5,
+      "watched": "2026-07-17",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/sleepy-hollow/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/0/1/5/8/50158-sleepy-hollow-0-600-0-900-crop.jpg?v=2b0876af9c",
+      "review": "Tim Burton’s style is so clear throughout the entire runtime… the colors and cinematography are unlike any other director. This is such a classic story, full of tropes and traditions iconic to the time the original story was written. By now some of those things are cliche, however, so the story is a little held back."
+    },
     {
       "title": "The Cabin in the Woods",
       "year": "2011",
@@ -473,16 +483,6 @@
       "url": "https://letterboxd.com/girff/film/the-housemaid-2025/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/1/9/1255319-the-housemaid-2025-0-600-0-900-crop.jpg?v=b054fee6ec",
       "review": "Sydney Sweeney really can’t act…"
-    },
-    {
-      "title": "Crime 101",
-      "year": "2026",
-      "rating": 3.0,
-      "watched": "2026-02-20",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/crime-101/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/5/8/1/3/2/1058132-crime-101-0-600-0-900-crop.jpg?v=eaba4b3224",
-      "review": "I actually really liked this movie. It is everything I expected going in, and the ending was pretty nice too."
     }
   ],
   "ratings": [
