@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T08:33:32+00:00",
+  "updated": "2026-07-20T09:34:10+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -33,7 +33,7 @@
     "buckets": [
       {
         "rating": 0.5,
-        "count": 3,
+        "count": 4,
         "url": "https://letterboxd.com/girff/films/ratings/rated/%C2%BD/by/date/"
       },
       {
@@ -48,17 +48,17 @@
       },
       {
         "rating": 2.0,
-        "count": 10,
+        "count": 12,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2/by/date/"
       },
       {
         "rating": 2.5,
-        "count": 17,
+        "count": 22,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2%C2%BD/by/date/"
       },
       {
         "rating": 3.0,
-        "count": 26,
+        "count": 27,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3/by/date/"
       },
       {
@@ -73,12 +73,12 @@
       },
       {
         "rating": 4.5,
-        "count": 31,
+        "count": 26,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
         "rating": 5.0,
-        "count": 26,
+        "count": 22,
         "url": "https://letterboxd.com/girff/films/ratings/rated/5/by/date/"
       }
     ]
@@ -508,7 +508,7 @@
       "title": "Swapped",
       "year": "2026",
       "url": "https://letterboxd.com/film/swapped-2026/",
-      "rating": 4.0
+      "rating": 3.5
     },
     {
       "title": "The Sheep Detectives",
@@ -580,13 +580,13 @@
       "title": "Zootopia 2",
       "year": "2025",
       "url": "https://letterboxd.com/film/zootopia-2/",
-      "rating": 3.5
+      "rating": 3.0
     },
     {
       "title": "JUJUTSU KAISEN: Execution",
       "year": "2025",
       "url": "https://letterboxd.com/film/jujutsu-kaisen-execution/",
-      "rating": 3.5
+      "rating": 2.5
     },
     {
       "title": "The Running Man",
@@ -598,7 +598,7 @@
       "title": "Marty Supreme",
       "year": "2025",
       "url": "https://letterboxd.com/film/marty-supreme/",
-      "rating": 5.0
+      "rating": 4.5
     },
     {
       "title": "Marvel Zombies",
@@ -616,7 +616,7 @@
       "title": "The Long Walk",
       "year": "2025",
       "url": "https://letterboxd.com/film/the-long-walk-2025/",
-      "rating": 4.0
+      "rating": 3.5
     },
     {
       "title": "One Battle After Another",
@@ -640,7 +640,7 @@
       "title": "Bugonia",
       "year": "2025",
       "url": "https://letterboxd.com/film/bugonia/",
-      "rating": 4.5
+      "rating": 4.0
     },
     {
       "title": "Lokah Chapter 1: Chandra",
@@ -652,7 +652,7 @@
       "title": "Eyes of Wakanda",
       "year": "2025",
       "url": "https://letterboxd.com/film/eyes-of-wakanda/",
-      "rating": 3.5
+      "rating": 3.0
     },
     {
       "title": "Weapons",
@@ -670,7 +670,7 @@
       "title": "The Fantastic 4: First Steps",
       "year": "2025",
       "url": "https://letterboxd.com/film/the-fantastic-4-first-steps/",
-      "rating": 4.5
+      "rating": 4.0
     },
     {
       "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
@@ -844,7 +844,7 @@
       "title": "Godzilla × Kong: The New Empire",
       "year": "2024",
       "url": "https://letterboxd.com/film/godzilla-kong-the-new-empire/",
-      "rating": 3.5
+      "rating": 3.0
     },
     {
       "title": "Kung Fu Panda 4",
@@ -880,7 +880,7 @@
       "title": "Leo",
       "year": "2023",
       "url": "https://letterboxd.com/film/leo-2023/",
-      "rating": 2.5
+      "rating": 2.0
     },
     {
       "title": "The Marvels",
@@ -916,7 +916,7 @@
       "title": "Barbie",
       "year": "2023",
       "url": "https://letterboxd.com/film/barbie/",
-      "rating": 4.0
+      "rating": 3.5
     }
   ],
   "watchlist": {
