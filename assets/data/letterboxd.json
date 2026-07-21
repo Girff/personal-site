@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20T09:34:10+00:00",
+  "updated": "2026-07-21T08:45:45+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 198,
+    "total": 199,
     "buckets": [
       {
         "rating": 0.5,
@@ -78,12 +78,22 @@
       },
       {
         "rating": 5.0,
-        "count": 22,
+        "count": 23,
         "url": "https://letterboxd.com/girff/films/ratings/rated/5/by/date/"
       }
     ]
   },
   "reviews": [
+    {
+      "title": "The Odyssey",
+      "year": "2026",
+      "rating": 5.0,
+      "watched": "2026-07-20",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/the-odyssey-2026/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/9/4/1255394-the-odyssey-2026-0-600-0-900-crop.jpg?v=1eed046d0c",
+      "review": "The Odyssey is 2 hours and 53 minutes of pure filmmaking genius on display by one of the greatest directors still active today. It's a film so impactful that very little can encompass all that it is, but I can try.This film encompasses all that makes Christopher Nolan's filmography so great. The scale hits as hard as Inception, the performances resonate with me to the level of those in Oppenheimer, and the raw emotions I felt are equal to those in Interstellar.In regards to the scale, the use of music contributes just as much as anything with the camera. Ludwig Göransson's score doesn't leave…"
+    },
     {
       "title": "Sleepy Hollow",
       "year": "1999",
@@ -473,19 +483,15 @@
       "url": "https://letterboxd.com/girff/film/dont-look-up-2021/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/5/7/2/2/5/5/572255-don-t-look-up-0-600-0-900-crop.jpg?v=a58cc4aba2",
       "review": "I honestly REALLY liked this movie. That whole thing with the president is a little too relatable…"
-    },
-    {
-      "title": "The Housemaid",
-      "year": "2025",
-      "rating": 2.0,
-      "watched": "2026-02-21",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-housemaid-2025/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/1/9/1255319-the-housemaid-2025-0-600-0-900-crop.jpg?v=b054fee6ec",
-      "review": "Sydney Sweeney really can’t act…"
     }
   ],
   "ratings": [
+    {
+      "title": "The Odyssey",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/the-odyssey-2026/",
+      "rating": 5.0
+    },
     {
       "title": "Toy Story 5",
       "year": "2026",
@@ -911,16 +917,10 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/oppenheimer-2023/",
       "rating": 5.0
-    },
-    {
-      "title": "Barbie",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/barbie/",
-      "rating": 3.5
     }
   ],
   "watchlist": {
-    "total": 55,
+    "total": 54,
     "films": [
       {
         "title": "Uncut Gems",
