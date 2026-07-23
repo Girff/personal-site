@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T08:45:06+00:00",
+  "updated": "2026-07-23T08:44:33+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -23,7 +23,7 @@
     }
   ],
   "histogram": {
-    "total": 200,
+    "total": 202,
     "buckets": [
       {
         "rating": 0.5,
@@ -32,7 +32,7 @@
       },
       {
         "rating": 1.0,
-        "count": 5,
+        "count": 6,
         "url": "https://letterboxd.com/girff/films/ratings/rated/1/by/date/"
       },
       {
@@ -57,7 +57,7 @@
       },
       {
         "rating": 3.5,
-        "count": 38,
+        "count": 39,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
@@ -78,6 +78,26 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Mercy",
+      "year": "2026",
+      "rating": 1.0,
+      "watched": "2026-07-22",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/mercy-2026/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/1/9/5/6/5/1119565-mercy-2026-0-600-0-900-crop.jpg?v=44de7ae605",
+      "review": "Complete slop. Reminds me of War of the Worlds, which is not a good sign at all. Somehow managed to create dozens of new plot lines by the third act resolve none of them."
+    },
+    {
+      "title": "Other Side of the Box",
+      "year": "2018",
+      "rating": 3.5,
+      "watched": "2026-07-22",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/other-side-of-the-box/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/2/3/3/4/3/523343-other-side-of-the-box-0-600-0-900-crop.jpg?v=775e3a7f1f",
+      "review": "This short film builds suspense and creepiness very well, but is held back by its acting and ending."
+    },
     {
       "title": "Eyes Wide Shut",
       "year": "1999",
@@ -457,26 +477,6 @@
       "url": "https://letterboxd.com/girff/film/lion/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/2/6/3/2/2/2/263222-lion-0-600-0-900-crop.jpg?v=1311804f8d",
       "review": "Beautiful cinematography and music choice.I didn’t know it was based on a true story all the way till the end, it honestly added even more to the movie finding that out."
-    },
-    {
-      "title": "Pixels",
-      "year": "2015",
-      "rating": 1.0,
-      "watched": "2026-03-08",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/pixels-2015/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/8/1/1/1/8/181118-pixels-0-600-0-900-crop.jpg?v=ce4f893760",
-      "review": "ignore my rating this is the greatest movie of all time"
-    },
-    {
-      "title": "100 METERS",
-      "year": "2025",
-      "rating": 4.0,
-      "watched": "2026-02-21",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/100-meters-2025/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/7/7/4/8/9/1177489-100-meters-2025-0-600-0-900-crop.jpg?v=8624aa1018",
-      "review": "I didn’t know a oner like that was possible in anime…this movie is rotoscoping done right 👏"
     }
   ],
   "ratings": [
@@ -545,6 +545,12 @@
       "year": "2026",
       "url": "https://letterboxd.com/film/crime-101/",
       "rating": 3.0
+    },
+    {
+      "title": "Mercy",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/mercy-2026/",
+      "rating": 1.0
     },
     {
       "title": "The Rip",
@@ -905,17 +911,17 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/the-boy-and-the-heron/",
       "rating": 5.0
-    },
-    {
-      "title": "Oppenheimer",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/oppenheimer-2023/",
-      "rating": 5.0
     }
   ],
   "watchlist": {
-    "total": 55,
+    "total": 54,
     "films": [
+      {
+        "title": "Arrival",
+        "year": "2016",
+        "url": "https://letterboxd.com/film/arrival-2016/",
+        "poster": "https://a.ltrbxd.com/resized/sm/upload/3u/dy/qd/qd/4Iu5f2nv7huqvuYkmZvSPOtbFjs-0-600-0-900-crop.jpg?v=0fc28fdf2c"
+      },
       {
         "title": "WALL·E",
         "year": "2008",
@@ -1022,7 +1028,7 @@
         "title": "Fight Club",
         "year": "1999",
         "url": "https://letterboxd.com/film/fight-club/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-600-0-900-crop.jpg?v=768b32dfa4"
+        "poster": null
       },
       {
         "title": "I Swear",
@@ -1076,12 +1082,6 @@
         "title": "Avengers: Doomsday",
         "year": "2026",
         "url": "https://letterboxd.com/film/avengers-doomsday/",
-        "poster": null
-      },
-      {
-        "title": "Chainsaw Man – The Movie: Reze Arc",
-        "year": "2025",
-        "url": "https://letterboxd.com/film/chainsaw-man-the-movie-reze-arc/",
         "poster": null
       }
     ]
