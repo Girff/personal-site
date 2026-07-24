@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23T08:44:33+00:00",
+  "updated": "2026-07-24T08:43:22+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -67,12 +67,12 @@
       },
       {
         "rating": 4.5,
-        "count": 27,
+        "count": 28,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
         "rating": 5.0,
-        "count": 23,
+        "count": 22,
         "url": "https://letterboxd.com/girff/films/ratings/rated/5/by/date/"
       }
     ]
