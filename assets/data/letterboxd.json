@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T08:43:22+00:00",
+  "updated": "2026-07-25T08:24:30+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -10,16 +10,16 @@
       "poster": "https://a.ltrbxd.com/resized/film-poster/2/5/1/9/4/3/251943-spider-man-into-the-spider-verse-0-600-0-900-crop.jpg?v=538fe0ada6"
     },
     {
+      "title": "Oppenheimer",
+      "year": "2023",
+      "url": "https://letterboxd.com/film/oppenheimer-2023/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/7/8/4/3/2/8/784328-oppenheimer-0-600-0-900-crop.jpg?v=e3c6e7a32c"
+    },
+    {
       "title": "Grave of the Fireflies",
       "year": "1988",
       "url": "https://letterboxd.com/film/grave-of-the-fireflies/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/4/4/5/5/8/44558-grave-of-the-fireflies-0-600-0-900-crop.jpg?v=0c61fd55f0"
-    },
-    {
-      "title": "Chainsaw Man – The Movie: Reze Arc",
-      "year": "2025",
-      "url": "https://letterboxd.com/film/chainsaw-man-the-movie-reze-arc/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/0/2/6/7/3/1102673-chainsaw-man-the-movie-reze-arc-0-600-0-900-crop.jpg?v=d9227a11bd"
     }
   ],
   "histogram": {
