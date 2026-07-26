@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T08:24:30+00:00",
+  "updated": "2026-07-26T08:39:28+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -14,6 +14,12 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/oppenheimer-2023/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/7/8/4/3/2/8/784328-oppenheimer-0-600-0-900-crop.jpg?v=e3c6e7a32c"
+    },
+    {
+      "title": "Blade Runner 2049",
+      "year": "2017",
+      "url": "https://letterboxd.com/film/blade-runner-2049/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/2/6/5/4/3/9/265439-blade-runner-2049-0-600-0-900-crop.jpg?v=86735e0bb8"
     },
     {
       "title": "Grave of the Fireflies",
@@ -980,7 +986,7 @@
         "title": "Primetime",
         "year": "2026",
         "url": "https://letterboxd.com/film/primetime-2026/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/2/0/1/9/1262019-primetime-2026-0-600-0-900-crop.jpg?v=4efcac1e51"
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/2/0/1/9/1262019-primetime-2026-0-600-0-900-crop.jpg?v=40a6562c99"
       },
       {
         "title": "Good Will Hunting",
