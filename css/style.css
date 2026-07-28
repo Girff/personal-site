@@ -769,8 +769,6 @@ footer.section { padding-bottom: 110px; }
 .voucher:nth-child(2) { rotate: 2deg; }
 .voucher:nth-child(3) { rotate: -2.5deg; }
 .voucher:nth-child(4) { rotate: 2.5deg; }
-.voucher:nth-child(5) { rotate: -2deg; }
-.voucher:nth-child(6) { rotate: 1.5deg; }
 
 .voucher .bcard-tilt {
   position: relative;
@@ -1016,7 +1014,7 @@ body.crt-off .crt-overlay { display: none; }
 
 .edu-card .bcard-tilt {
   position: relative;
-  min-height: 302px; /* the old 5:6 ratio at full width — grows if the details need it */
+  aspect-ratio: 5 / 6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1032,15 +1030,6 @@ body.crt-off .crt-overlay { display: none; }
 .edu-suit { font-size: 46px; color: #fff; line-height: 1; text-shadow: 0 4px 0 rgba(0, 0, 0, .3); }
 .edu-card h4 { font-size: 25px; color: #fff; margin: 0; line-height: 1.1; text-shadow: 0 3px 0 rgba(0, 0, 0, .35); }
 .edu-card .edu-loc { margin: 0; color: #cfe2f6; font-size: 16px; }
-
-.edu-card .edu-stats {
-  margin: 8px 0 0;
-  padding-top: 8px;
-  border-top: 2px solid rgba(255, 255, 255, .28);
-  color: #e6f1fd;
-  font-size: 14px;
-  line-height: 1.5;
-}
 
 .edu-sticker {
   position: absolute;
@@ -1081,8 +1070,8 @@ body.crt-off .crt-overlay { display: none; }
 
 .r-row .chips { margin: 0; }
 
-.r-obj p { margin: 0; color: var(--text); font-size: 17px; max-width: 62ch; }
-.r-obj b { color: var(--gold); }
+.r-intro p { margin: 0; color: var(--text); font-size: 17px; max-width: 62ch; }
+.r-intro b { color: var(--gold); }
 
 .r-proj b { font-size: 22px; }
 .r-proj .rarity { margin-left: 10px; vertical-align: 3px; }
@@ -1171,7 +1160,6 @@ body.crt-off .crt-overlay { display: none; }
 /* ===== movies (letterboxd) ===== */
 .bbtn.teal { --c: #1fb6a6; --c-dk: #137d72; }
 .teal-pl   { background: #1fb6a6; }
-.num-teal  { color: #3fd8c6; }
 .r-sticker.teal-s { background: #1fb6a6; }
 
 .movies-panel .r-plaque { margin-bottom: 16px; }
