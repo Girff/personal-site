@@ -38,16 +38,16 @@
           <a class="bbtn teal big" href="movies.html">THE MOVIE CORNER</a>
         </div>
         <div class="hud">
-          <div class="hud-chip"><span>SKILLS IN HAND</span><b class="num-red">10</b></div>
-          <div class="hud-chip"><span>ACHIEVEMENTS</span><b class="num-green">3</b></div>
+          <div class="hud-chip"><span>SKILLS IN DECK</span><b class="num-red">15</b></div>
+          <div class="hud-chip"><span>ACHIEVEMENTS</span><b class="num-green">6</b></div>
           <div class="hud-chip"><span>PROJECTS</span><b class="num-orange">1 &amp; counting</b></div>
+          <div class="hud-chip"><span>SERVICE HOURS</span><b class="num-blue">35</b></div>
         </div>
       </div>
 
       <div class="hero-right">
         <div class="portrait-card" data-float-card>
           <div class="bcard-tilt">
-            <!-- TODO: add your photo at assets/img/me.jpg — the card upgrades itself automatically -->
             <img class="portrait-img" src="assets/img/me.jpeg" alt="Photo of Advay"
                  onerror="this.closest('.bcard-tilt').classList.add('no-photo')">
             <div class="portrait-fallback" aria-hidden="true">
@@ -75,17 +75,25 @@
           if something isn’t difficult or interesting to do, it isn’t worth doing. Everything I do is
           in search of another problem to solve. This obsession with problem-solving has taken form
           in my love for programming.</p>
-        <p>I’m an avid videogame player, and have used computers all my life. This meant building
+        <p>I’m an avid videogame player, and have used computers all my life — right down to
+          <b class="num-blue">building two desktops from parts</b> and being the person everyone calls
+          when a device, a driver, or the wifi stops cooperating. That same itch turned into
           passion projects including entire videogames, through which I learned
           <b class="num-green">full-stack agile development</b>. Additionally, I value teaching
           others, and I am running my school’s Computer Science Club as
-          <b class="num-green">an officer</b>. I even captained my school’s Computer Science UIL team
-          to reach the <b class="num-green">state-level competition</b> – for the first time in my
-          school’s 20-year history – winning fourth place.</p>
+          <b class="num-green">an elected officer</b> — planning meetings and giving instructional
+          presentations to <b class="num-green">50+ active members</b>. I even captained my school’s
+          Computer Science UIL team to reach the <b class="num-green">state-level competition</b> –
+          for the first time in my school’s 20-year history – winning fourth place. In the classroom
+          that adds up to a <b class="num-gold">4.0 unweighted GPA</b> and a
+          <b class="num-gold">5 on the AP Computer Science A exam</b>.</p>
         <p>If I’m not programming or playing videogames, there are many things I may be doing
           instead: practicing my typing speed, watching movies (see
           <a href="movies.html">the movie corner</a> for more) or playing piano. I’ve been playing
-          piano for over ten years, it’s something I truly couldn’t live without.</p>
+          piano for over ten years, it’s something I truly couldn’t live without. Both of those
+          hobbies have followed me out into the world — I volunteer with the
+          <b class="num-teal">Plano Symphony Orchestra</b> helping concerts start on time, and with the
+          <b class="num-teal">Indica Film Festival</b> running check-in and screening logistics.</p>
         <p>This site is my deck. Look through it, drag things around, see what I’m holding.</p>
       </div>
     </section>
@@ -94,7 +102,7 @@
     <section id="skills" class="section">
       <div class="sec-head">
         <span class="sec-plaque red-pl">SKILLS</span>
-        <span class="sec-sub">my current hand — select up to 5, then play it or discard it</span>
+        <span class="sec-sub">10 dealt from a 15-skill deck — select up to 5, then play it or discard it</span>
       </div>
       <div class="panel skills-panel">
         <div class="game-layout">
@@ -133,9 +141,11 @@
             <div class="hand" id="skill-hand">
               <noscript>
                 <ul class="skill-fallback">
-                  <li><b>Languages:</b> Python, Java, C#, JavaScript, HTML/CSS, Swift</li>
+                  <li><b>Languages:</b> C#, Java, Python, JavaScript, HTML/CSS, Swift</li>
                   <li><b>Frameworks &amp; libraries:</b> XNA/MonoGame, React</li>
                   <li><b>Dev skills:</b> Git/GitHub, Agile/Scrum, algorithmic problem solving</li>
+                  <li><b>Hardware &amp; people:</b> PC building, technical troubleshooting, customer
+                    communication, public speaking, teamwork</li>
                 </ul>
               </noscript>
             </div>
@@ -158,7 +168,8 @@
           <span class="legend-item">♠ languages</span>
           <span class="legend-item red-t">♥ frameworks &amp; libraries</span>
           <span class="legend-item red-t">♦ dev skills</span>
-          <span class="legend-item legend-hint">ranks reshuffle every deal</span>
+          <span class="legend-item">♣ hardware &amp; people</span>
+          <span class="legend-item legend-hint">10 of 15 in hand — spent cards draw from the deck</span>
         </div>
       </div>
     </section>
@@ -174,7 +185,6 @@
         <div class="joker-card" data-float-card>
           <div class="bcard-tilt">
             <div class="joker-art">
-              <!-- TODO: add a screenshot at assets/img/spelunking-penguin.png -->
               <img src="assets/img/spelunking-penguin.png" alt="Spelunking Penguin screenshot"
                    onerror="this.closest('.joker-art').classList.add('no-shot')">
               <div class="shot-fallback" aria-hidden="true">
@@ -192,16 +202,20 @@
             <span class="ptype">VIDEO GAME</span>
           </div>
           <h3>Spelunking Penguin</h3>
-          <!-- TODO: replace with your real description — what it is, what you built, what was hard -->
-          <p>A 2D platformer starring a penguin with serious cave ambitions. Built in C# on the
-            XNA/MonoGame framework.</p>
+          <p>A 2D platformer starring a penguin with serious cave ambitions. Designed and programmed
+            in C# on the XNA/MonoGame framework over a <b class="num-gold">five-month development
+            cycle</b> — player movement, physics, and level design all built from the ground up.</p>
+          <p>Made with a project partner, which meant splitting the work, merging each other’s code,
+            and actually hitting the deadlines we set. Turns out the hardest system in any game is
+            version control.</p>
           <div class="chips">
             <span class="chip blue-c">C#</span>
             <span class="chip red-c">MonoGame</span>
             <span class="chip orange-c">Game Dev</span>
+            <span class="chip green-c">2-Person Team</span>
+            <span class="chip purple-c">5 Months</span>
           </div>
           <div class="proj-btns">
-            <!-- TODO: set your GitHub username in js/main.js CONFIG and these links fill themselves in -->
             <a class="bbtn dark" data-github="spelunking-penguin" href="https://github.com" target="_blank" rel="noopener">GITHUB ↗</a>
             <span class="bbtn blue disabled" title="add a playable build or video link here later">PLAY — SOON</span>
           </div>
@@ -225,8 +239,10 @@
           <div class="bcard-tilt">
             <div class="v-medal">★</div>
             <h3>COMPUTER SCIENCE CLUB OFFICER</h3>
-            <p>Officer of my school's Computer Science Club — running meetings, planning events, and
-              recruiting people to the cause.</p>
+            <p>Elected officer of a club with <b>50+ active members</b> — planning and leading
+              meetings, delivering instructional presentations, and mentoring newer members
+              through their first programming questions.</p>
+            <span class="v-sticker">SINCE 2025</span>
             <span class="v-ribbon">LEADERSHIP</span>
           </div>
         </div>
@@ -234,21 +250,52 @@
           <div class="bcard-tilt">
             <div class="v-medal gold">♛</div>
             <h3>UIL CS TEAM CAPTAIN</h3>
-            <p>Captained my school's Computer Science UIL team — qualified for the Texas state
-              competition and placed 4th.</p>
+            <p>Captained my school's Computer Science UIL team — qualified for the Texas UIL State
+              Championship and placed 4th.</p>
             <span class="v-sticker">4TH IN STATE</span>
             <span class="v-ribbon gold">COMPETITIVE</span>
           </div>
         </div>
         <div class="voucher" data-float-card>
           <div class="bcard-tilt">
+            <div class="v-medal gold">✎</div>
+            <h3>THE REPORT CARD</h3>
+            <p>A <b>4.0 unweighted GPA</b> and a <b>5 — the highest possible score</b> — on the
+              AP Computer Science A exam. Currently taking Video Game Programming, which is
+              exactly as fun as it sounds.</p>
+            <span class="v-sticker">AP CSA: 5</span>
+            <span class="v-ribbon gold">ACADEMICS</span>
+          </div>
+        </div>
+        <div class="voucher" data-float-card>
+          <div class="bcard-tilt">
             <div class="v-medal">♪</div>
             <h3>PIANIST</h3>
-            <!-- TODO: name your actual awards/competitions here (e.g. guild auditions, festival ratings) -->
             <p>Over ten years at the keys — performing, competing, and collecting a steady series
               of awards along the way. The one discipline I've kept longer than any codebase.</p>
             <span class="v-sticker">10+ YEARS</span>
             <span class="v-ribbon">MUSIC</span>
+          </div>
+        </div>
+        <div class="voucher" data-float-card>
+          <div class="bcard-tilt">
+            <div class="v-medal">♫</div>
+            <h3>PLANO SYMPHONY VOLUNTEER</h3>
+            <p>Supporting live concert events since January 2026 — assisting patrons and helping
+              performances start on time, on a volunteer team where the downbeat waits for nobody.</p>
+            <span class="v-sticker">15 HOURS</span>
+            <span class="v-ribbon">SERVICE</span>
+          </div>
+        </div>
+        <div class="voucher" data-float-card>
+          <div class="bcard-tilt">
+            <div class="v-medal">▶</div>
+            <h3>INDICA FILM FESTIVAL VOLUNTEER</h3>
+            <p>Check-in, seating, and answering whatever attendees need mid-screening since
+              November 2025 — plus helping staff coordinate setup and screening logistics.
+              A cinephile's ideal service hours.</p>
+            <span class="v-sticker">20 HOURS</span>
+            <span class="v-ribbon">SERVICE</span>
           </div>
         </div>
       </div>
@@ -280,9 +327,9 @@
       </div>
       <div class="panel resume-panel">
         <div class="resume-head">
-          <!-- TODO: set githubUser in js/main.js and the github link fills in -->
-          <h3>ADVAY</h3>
-          <p class="resume-contact">advayvk@gmail.com · <a data-github href="https://github.com" target="_blank" rel="noopener">github</a> · this site</p>
+          <h3>ADVAY KONGORPALLI</h3>
+          <p class="resume-contact">advayvk@gmail.com · 903-864-1228 · Frisco, TX ·
+            <a data-github href="https://github.com" target="_blank" rel="noopener">github</a> · this site</p>
         </div>
 
         <div class="resume-grid">
@@ -293,17 +340,27 @@
               <span class="edu-suit" aria-hidden="true">♠</span>
               <h4>LIBERTY HIGH SCHOOL</h4>
               <p class="edu-loc">Frisco, Texas</p>
+              <p class="edu-stats">4.0 GPA (unweighted)<br>AP Computer Science A — 5<br>Video Game Programming</p>
               <span class="edu-sticker">CLASS OF 2028</span>
             </div>
           </aside>
 
           <div class="resume-stack">
+            <div class="r-row r-obj">
+              <span class="r-plaque gold-pl">OBJECTIVE</span>
+              <p>High school junior with hands-on programming, PC-building, and troubleshooting
+                experience seeking a <b>part-time Retail Sales Associate position at Best Buy</b>.
+                Comfortable explaining technology in plain language to customers of any experience
+                level. <b>Available weekday evenings and weekends</b> — nights, weekends, and
+                holidays as needed.</p>
+            </div>
+
             <div class="r-row">
               <span class="r-plaque blue-pl">SKILLS</span>
               <div class="chips">
-                <span class="chip blue-c">Python</span>
-                <span class="chip blue-c">Java</span>
                 <span class="chip blue-c">C#</span>
+                <span class="chip blue-c">Java</span>
+                <span class="chip blue-c">Python</span>
                 <span class="chip blue-c">JavaScript</span>
                 <span class="chip blue-c">HTML/CSS</span>
                 <span class="chip blue-c">Swift</span>
@@ -312,6 +369,11 @@
                 <span class="chip orange-c">Git &amp; GitHub</span>
                 <span class="chip orange-c">Agile / Scrum</span>
                 <span class="chip orange-c">Algorithmic Problem Solving</span>
+                <span class="chip green-c">PC Building</span>
+                <span class="chip green-c">Technical Troubleshooting</span>
+                <span class="chip green-c">Customer Communication</span>
+                <span class="chip green-c">Public Speaking</span>
+                <span class="chip green-c">Teamwork &amp; Reliability</span>
               </div>
             </div>
 
@@ -319,7 +381,8 @@
               <span class="r-plaque orange-pl">PROJECTS</span>
               <div>
                 <b>Spelunking Penguin</b><span class="rarity rare">RARE</span>
-                <p>2D platformer built in C# on XNA/MonoGame — gameplay systems, level design,
+                <p>2D platformer programmed in C# on XNA/MonoGame across a five-month development
+                  cycle — player movement, physics, and level design, built with a partner and
                   released on GitHub.</p>
               </div>
             </div>
@@ -329,17 +392,45 @@
               <div class="r-badge">
                 <span class="r-medal" aria-hidden="true">★</span>
                 <div>
-                  <b>Computer Science Club — Officer</b>
-                  <p>meetings, events, and growing the club.</p>
+                  <b>Computer Science Club — Officer</b> <span class="r-when">2025 – present</span>
+                  <p>elected officer for 50+ active members — leading meetings, presenting lessons,
+                    and mentoring newer programmers.</p>
                 </div>
               </div>
               <div class="r-badge">
                 <span class="r-medal gold" aria-hidden="true">♛</span>
                 <div>
                   <b>UIL Computer Science Team — Captain</b>
-                  <p>led the team to the Texas state competition.</p>
+                  <p>led the team to the Texas UIL State Championship.</p>
                 </div>
                 <span class="r-sticker">4TH IN STATE</span>
+              </div>
+              <div class="r-badge">
+                <span class="r-medal gold" aria-hidden="true">✎</span>
+                <div>
+                  <b>Academics</b>
+                  <p>4.0 unweighted GPA · score of 5 (highest possible) on the AP Computer Science A exam.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="r-row">
+              <span class="r-plaque teal-pl">VOLUNTEERING</span>
+              <div class="r-badge">
+                <span class="r-medal" aria-hidden="true">♪</span>
+                <div>
+                  <b>Plano Symphony Orchestra</b> <span class="r-when">Jan 2026 – present</span>
+                  <p>supporting live concerts — assisting patrons and keeping performances on schedule.</p>
+                </div>
+                <span class="r-sticker teal-s">15 HOURS</span>
+              </div>
+              <div class="r-badge">
+                <span class="r-medal" aria-hidden="true">▶</span>
+                <div>
+                  <b>Indica Film Festival</b> <span class="r-when">Nov 2025 – present</span>
+                  <p>attendee check-in, seating, and screening logistics alongside festival staff.</p>
+                </div>
+                <span class="r-sticker teal-s">20 HOURS</span>
               </div>
             </div>
           </div>

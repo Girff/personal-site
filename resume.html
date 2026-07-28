@@ -57,6 +57,8 @@
     .skills-line { font-size: 13.5px; margin: 3px 0; }
     .skills-line b { font-weight: bold; }
 
+    .objective { font-size: 13.5px; margin: 4px 0 0; }
+
     .todo { background: #fff3bf; padding: 0 3px; }
 
     /* floating print button (hidden when printing) */
@@ -83,10 +85,18 @@
     .printbar a.back { background: #444; }
 
     @media print {
-      body { background: #fff; }
-      .page { margin: 0; box-shadow: none; padding: .55in .7in; min-height: 0; max-width: none; }
+      body { background: #fff; line-height: 1.3; }
+      .page { margin: 0; box-shadow: none; padding: .45in .65in; min-height: 0; max-width: none; }
       .printbar { display: none; }
       .todo { background: none; }
+
+      /* squeeze the vertical rhythm so the whole thing lands on one page */
+      header { padding-bottom: 9px; margin-bottom: 13px; }
+      h1 { font-size: 27px; }
+      h2 { margin: 13px 0 5px; }
+      .entry { margin-bottom: 7px; }
+      li { margin-bottom: 1px; }
+      .skills-line { margin: 1px 0; }
     }
 
     @page { size: letter; margin: 0; }
@@ -100,80 +110,97 @@
 
   <div class="page">
     <header>
-      <!-- TODO: full legal name -->
-      <h1>Advay <span class="todo">[Last Name]</span></h1>
+      <h1>Advay Kongorpalli</h1>
       <p class="contact">
-        advayvk@gmail.com &nbsp;·&nbsp;
-        <span class="todo">github.com/[username]</span> &nbsp;·&nbsp;
-        <span class="todo">[your-site].github.io</span> &nbsp;·&nbsp;
-        Frisco, TX
+        903-864-1228 &nbsp;·&nbsp;
+        <a href="mailto:advayvk@gmail.com">advayvk@gmail.com</a> &nbsp;·&nbsp;
+        Frisco, TX &nbsp;·&nbsp;
+        <a href="https://github.com/Girff">github.com/Girff</a>
       </p>
     </header>
+
+    <h2>Objective</h2>
+    <p class="objective">High school junior with hands-on programming, PC-building, and troubleshooting
+      experience seeking a part-time Retail Sales Associate position at Best Buy. Comfortable explaining
+      technology in plain language to customers of any experience level, and available for evening and
+      weekend shifts.</p>
 
     <h2>Education</h2>
     <div class="entry">
       <div class="entry-head">
         <span class="entry-title">Liberty High School — Frisco, TX</span>
-        <span class="entry-meta">Expected graduation: 2028</span>
+        <span class="entry-meta">Expected graduation: May 2028</span>
       </div>
       <ul>
-        <li>Relevant coursework: <span class="todo">[AP Computer Science A, etc.]</span></li>
+        <li>GPA: 4.0 (unweighted)</li>
+        <li>AP Computer Science A — Exam score: 5</li>
+        <li>Coursework: Video Game Programming</li>
       </ul>
     </div>
 
-    <h2>Technical Skills</h2>
-    <p class="skills-line"><b>Languages:</b> Python, Java, C#, JavaScript, HTML/CSS, Swift</p>
-    <p class="skills-line"><b>Frameworks &amp; Libraries:</b> XNA/MonoGame, React</p>
-    <p class="skills-line"><b>Practices:</b> Git/GitHub, Agile/Scrum development, algorithmic problem solving</p>
+    <h2>Relevant Skills</h2>
+    <p class="skills-line"><b>Programming languages:</b> C#, Java, Python, JavaScript, HTML/CSS</p>
+    <p class="skills-line"><b>PC hardware:</b> Built two custom desktop computers from components, including part selection and assembly</p>
+    <p class="skills-line"><b>Technical troubleshooting:</b> Years of experience diagnosing and resolving device, software, and network issues</p>
+    <p class="skills-line"><b>Customer communication:</b> Skilled at translating technical concepts into plain language for non-technical users</p>
+    <p class="skills-line"><b>Public speaking:</b> Confident presenting to groups and demonstrating technical work to an audience</p>
+    <p class="skills-line"><b>Teamwork and reliability:</b> Experienced collaborating on long-term projects with shared deadlines</p>
 
-    <h2>Projects</h2>
+    <h2>Leadership, Projects &amp; Volunteer Experience</h2>
     <div class="entry">
       <div class="entry-head">
-        <span class="entry-title">Spelunking Penguin — 2D Platformer</span>
-        <span class="entry-meta">C#, XNA/MonoGame</span>
+        <span class="entry-title">Officer — Computer Science Club, Liberty High School</span>
+        <span class="entry-meta">2025 – Present</span>
       </div>
       <ul>
-        <li>Designed and built a 2D platformer in C# on the XNA/MonoGame framework.</li>
-        <li>Implemented gameplay systems including <span class="todo">[player movement/physics, level loading, collision — list what you actually built]</span>.</li>
-        <li>Published source code on GitHub.</li>
-      </ul>
-    </div>
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">Personal Website</span>
-        <span class="entry-meta">HTML/CSS, JavaScript, WebGL</span>
-      </div>
-      <ul>
-        <li>Built an interactive, game-styled portfolio site from scratch with vanilla JavaScript — custom WebGL shader background, drag-and-drop card physics, and a static markdown blog; deployed on GitHub Pages.</li>
-      </ul>
-    </div>
-
-    <h2>Leadership &amp; Activities</h2>
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">Computer Science Club — Officer</span>
-        <span class="entry-meta"><span class="todo">[20XX–present]</span></span>
-      </div>
-      <ul>
-        <li>Help lead club operations: organizing meetings, planning events, and growing membership.</li>
+        <li>Serve as an elected officer for a club of more than 50 active members.</li>
+        <li>Plan and lead meetings, including preparing and delivering instructional presentations to members.</li>
+        <li>Mentor newer members and answer questions on programming concepts and tools.</li>
       </ul>
     </div>
     <div class="entry">
       <div class="entry-head">
-        <span class="entry-title">UIL Computer Science Team — Captain</span>
-        <span class="entry-meta"><span class="todo">[20XX–present]</span></span>
+        <span class="entry-title">“Spelunking Penguin” — 2D Platformer Game</span>
+        <span class="entry-meta">2026 · 5-month project</span>
       </div>
       <ul>
-        <li>Led the team through district and regional qualification to the Texas state competition.</li>
+        <li>Designed and programmed a 2D platformer game in C# over a five-month development cycle.</li>
+        <li>Built core gameplay systems including player movement, physics, and level design.</li>
+        <li>Coordinated with a project partner to divide work, merge code, and meet deadlines.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Volunteer — Plano Symphony Orchestra</span>
+        <span class="entry-meta">January 2026 – Present · 15 service hours</span>
+      </div>
+      <ul>
+        <li>Supported live concert events, assisting patrons and helping performances run on schedule.</li>
+        <li>Worked as part of a volunteer team in a fast-paced event environment with fixed start times.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Volunteer — Indica Film Festival</span>
+        <span class="entry-meta">November 2025 – Present · 20 service hours</span>
+      </div>
+      <ul>
+        <li>Assisted festival attendees with check-in, seating, and general questions during screenings.</li>
+        <li>Helped coordinate event setup and screening logistics alongside staff and other volunteers.</li>
       </ul>
     </div>
 
-    <h2>Awards</h2>
+    <h2>Awards &amp; Achievements</h2>
     <div class="entry">
       <ul>
-        <li><b>4th Place, UIL Computer Science — Texas State Competition</b> (<span class="todo">[year]</span>), as team captain.</li>
+        <li>4th place, State — UIL Computer Science (Texas UIL State Championship)</li>
+        <li>Score of 5 on the AP Computer Science A exam (highest possible)</li>
+        <li>4.0 unweighted GPA</li>
       </ul>
     </div>
+
+    <h2>Availability</h2>
+    <p class="objective">Weekday evenings and weekends. Able to work nights, weekends, and holidays as needed.</p>
   </div>
 </body>
 </html>

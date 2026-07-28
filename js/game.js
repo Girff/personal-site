@@ -1,7 +1,8 @@
 /* The skills section as a playable blind: random ranks each deal,
    real poker-hand scoring, discards, and an endless ladder of CS-themed boss blinds.
-   Suits always map to skill categories; only ranks reshuffle.
-   Played cards leave the table too — no replaying the same hand. */
+   Suits always map to skill categories; ranks reshuffle every deal.
+   Played cards leave the table too — they go to the discard pile and the next
+   skill is drawn off the deck, so the hand is only ever part of the full deck. */
 (function () {
   'use strict';
 
@@ -24,12 +25,18 @@
     { name: 'React', suit: 'heart' },
     // dev skills — diamonds
     { name: 'Git & GitHub',  suit: 'diamond' },
-    { name: 'Agile / Scrum', suit: 'diamond' }
+    { name: 'Agile / Scrum', suit: 'diamond' },
+    // hardware & people — clubs
+    { name: 'PC Building',      suit: 'club' },
+    { name: 'Troubleshooting',  suit: 'club' },
+    { name: 'Customer Comms',   suit: 'club' },
+    { name: 'Public Speaking',  suit: 'club' },
+    { name: 'Teamwork',         suit: 'club' }
   ];
 
   var SUIT_GLYPH = { spade: '♠', heart: '♥', diamond: '♦', club: '♣' };
   var SUIT_COLOR = { spade: 'suit-black', club: 'suit-black', heart: 'suit-red', diamond: 'suit-red' };
-  var CAT_LABEL = { spade: 'LANGUAGE', heart: 'FRAMEWORK', diamond: 'SKILL', club: 'MISC' };
+  var CAT_LABEL = { spade: 'LANGUAGE', heart: 'FRAMEWORK', diamond: 'SKILL', club: 'HANDS-ON' };
   var RANK_NAME = { 11: 'J', 12: 'Q', 13: 'K', 14: 'A' };
 
   var HAND_TYPES = {
@@ -54,6 +61,7 @@
 
   var HANDS_PER_BLIND = 4;
   var DISCARDS_PER_BLIND = 4;
+  var HAND_SIZE = 10; // the rest of the deck waits to be drawn
 
   /* ---------- state ---------- */
   var state = {
@@ -98,12 +106,43 @@
     }
   }
 
+  /* ---------- the deck ---------- */
+  function shuffled(list) {
+    var a = list.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  var drawPile = shuffled(SKILLS);
+  var discardPile = [];
+
+  function draw() {
+    if (!drawPile.length) {
+      drawPile = shuffled(discardPile);
+      discardPile = [];
+    }
+    return drawPile.pop();
+  }
+
   /* ---------- dealing ---------- */
   function randRank() { return 2 + Math.floor(Math.random() * 13); } // 2..14
 
   function rankLabel(v) { return RANK_NAME[v] || String(v); }
 
   function chipValue(v) { return v === 14 ? 11 : Math.min(v, 10); }
+
+  function faceCard(card, s) {
+    // classList, not className — the card may be mid-animation when it's refaced
+    card.classList.remove('suit-red', 'suit-black');
+    card.classList.add(SUIT_COLOR[s.suit]);
+    card.dataset.suit = s.suit;
+    card.dataset.skill = s.name;
+    card.querySelector('.bname').textContent = s.name;
+    card.querySelector('.cat').textContent = CAT_LABEL[s.suit];
+  }
 
   function dealCard(card) {
     var v = randRank();
@@ -116,22 +155,31 @@
     });
   }
 
-  function buildCard(s, i) {
+  /* spent card goes to the discard pile, its slot draws the next skill */
+  function redrawInto(card) {
+    if (card.dataset.skill) {
+      discardPile.push({ name: card.dataset.skill, suit: card.dataset.suit });
+    }
+    faceCard(card, draw());
+    dealCard(card);
+  }
+
+  function buildCard(i) {
     var card = document.createElement('div');
-    card.className = 'bcard ' + SUIT_COLOR[s.suit];
-    card.dataset.suit = s.suit;
+    card.className = 'bcard';
     card.innerHTML =
       '<div class="bcard-tilt" style="--bob:' + (-(i * 0.45)).toFixed(2) + 's">' +
         '<div class="corner tl"></div>' +
-        '<div class="bname">' + s.name + '</div>' +
-        '<div class="cat">' + CAT_LABEL[s.suit] + '</div>' +
+        '<div class="bname"></div>' +
+        '<div class="cat"></div>' +
         '<div class="corner br"></div>' +
       '</div>';
+    faceCard(card, draw());
     dealCard(card);
     return card;
   }
 
-  SKILLS.forEach(function (s, i) { handEl.appendChild(buildCard(s, i)); });
+  for (var h = 0; h < HAND_SIZE; h++) handEl.appendChild(buildCard(h));
 
   var hand = new window.BalatroCards.Hand(handEl, {
     maxSelect: 5,
@@ -240,7 +288,7 @@
     setTimeout(function () {
       var W = handEl.clientWidth;
       cards.forEach(function (c) {
-        dealCard(c);
+        redrawInto(c);
         // jump (transition off) to the deck side, then slide back into the fan
         c.style.transition = 'none';
         c.style.transform = 'translate(' + W + 'px, ' + (H * 0.3) + 'px) rotate(-20deg)';
