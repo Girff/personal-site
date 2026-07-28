@@ -1171,7 +1171,6 @@ body.crt-off .crt-overlay { display: none; }
 /* ===== movies (letterboxd) ===== */
 .bbtn.teal { --c: #1fb6a6; --c-dk: #137d72; }
 .teal-pl   { background: #1fb6a6; }
-.num-teal  { color: #3fd8c6; }
 .r-sticker.teal-s { background: #1fb6a6; }
 
 .movies-panel .r-plaque { margin-bottom: 16px; }
