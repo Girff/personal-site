@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T09:17:04+00:00",
+  "updated": "2026-08-01T08:33:57+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 202,
+    "total": 206,
     "buckets": [
       {
         "rating": 0.5,
@@ -58,12 +58,12 @@
       },
       {
         "rating": 3.0,
-        "count": 27,
+        "count": 29,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3/by/date/"
       },
       {
         "rating": 3.5,
-        "count": 39,
+        "count": 40,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
@@ -73,7 +73,7 @@
       },
       {
         "rating": 4.5,
-        "count": 28,
+        "count": 29,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,66 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Spider-Man: Homecoming",
+      "year": "2017",
+      "rating": 4.5,
+      "watched": "2026-07-31",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/spider-man-homecoming/1/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/2/4/2/7/1/0/242710-spider-man-homecoming-0-600-0-900-crop.jpg?v=61e8c57229",
+      "review": "Spider-Main: Homecoming is the Spider-Man movie I grew up with. This was the one my childhood self looked to for motivation, and I&#039;m so glad it was. Tom Holland&#039;s Spider-Man is nothing like Tobey&#039;s or Andrew&#039;s, and their worlds couldn&#039;t be any more different. Somehow though, Tom continues to embody the same ideas of perseverance and resilience. A couple scenes near the climax really rocked me to my core, that’s what makes this movie stand out."
+    },
+    {
+      "title": "The Amazing Spider-Man 2",
+      "year": "2014",
+      "rating": 3.0,
+      "watched": "2026-07-31",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/the-amazing-spider-man-2/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/fs/xh/ms/hx/9HFdUfEuvbsaBfroPZNeDiA9W9-0-600-0-900-crop.jpg?v=4bb266c754",
+      "review": "I came into this movie expecting a much worse movie than the first, but I’m glad to say I was pleasantly surprised. Hans Zimmer’s score works amazingly for this movie and it has the best action and web swinging out of any Spider-Man movie I’ve seen. Again though, like TASM 1, the ideas really work and it’s truly interesting the direction the writers went with things, but they can’t manage to stick the landing. The ending is all over the place and the villains fall flat near the end. It’s sad how Andrew Garfield was treated, he was an incredible actor for Peter and Spider-Man. He deserved a…"
+    },
+    {
+      "title": "The Amazing Spider-Man",
+      "year": "2012",
+      "rating": 3.5,
+      "watched": "2026-07-31",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/the-amazing-spider-man/1/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/0/6/7/7/50677-the-amazing-spider-man-0-600-0-900-crop.jpg?v=2e109aabed",
+      "review": "This is a really hard movie to rate. On one hand, I really appreciate a lot of the conceptual and technical things in this movie. Changing Peter&#039;s personality from before the bite, focusing on Gwen, and the Lizard as a main villain are all very interesting choices, but the writing struggles to bring them together well. Peter and Gwen&#039;s chemistry together is off the charts, their romance is the best part of the whole movie, but the other aspects don&#039;t reach those same heights. I love the action and the swinging, though, the 5-year gap from Spider-Man 3 to this movie is clear in…"
+    },
+    {
+      "title": "Spider-Man 3",
+      "year": "2007",
+      "rating": 3.0,
+      "watched": "2026-07-31",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/spider-man-3/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/gi/zi/fp/69/uC2pAMjb32NIgQ1GdC1Bl6LZJc2-0-600-0-900-crop.jpg?v=71a23d5211",
+      "review": "Everything that Spider-Man 2 did right as a sequel, Spider-Man 3 does wrong. It manages to completely unravel plot threads that have lasted the past two movies, and even its new villains are given little to no proper motivations on why they are after Spider-Man. Also, the pattern of &quot;oh no! MJ&#039;s been kidnapped by the villain&quot; gets old after three movies of it happening in a row. Still, the action is great and there are some genuinely good moments, mostly when Peter had the symbiote, so I can&#039;t dock it too many points."
+    },
+    {
+      "title": "Spider-Man 2",
+      "year": "2004",
+      "rating": 4.0,
+      "watched": "2026-07-31",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/spider-man-2/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/pq/mi/kb/ck/7JtMVM58MnzxWeyubzLpXBiVnDC-0-600-0-900-crop.jpg?v=c5f2675b28",
+      "review": "Spider-Man 2 juggles both continued plot threads from the first movie as well as entirely new challenges for Spider-Man to face incredibly to create one of the quintessential comic-book-movie sequels. The acting was a mixed bag; Molina&#039;s performance as Dr. Octavius works to create yet another extremely threatening villain, but I wasn&#039;t as convinced by Tobey Maguire&#039;s. The visuals are a clear step up from the previous installment, it is clear much more time and effort was put into them. Overall, an excellent watch and I sure hope the third movie continues the trend of getting…"
+    },
+    {
+      "title": "Spider-Man",
+      "year": "2002",
+      "rating": 3.5,
+      "watched": "2026-07-31",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/spider-man/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/5/6/1/51561-spider-man-0-600-0-900-crop.jpg?v=a7394840f4",
+      "review": "I&#039;m clearly not as high on this movie as a lot of other people, but that doesn&#039;t take away from how influential and well-made this movie is, especially for its time. The action and performances were a standout for me, especially Willem Dafoe&#039;s as Norman Osborne. I love how the perception that New York has of Spider-Man is a real influence on the plot, it makes the entire world feel more lived in. Some of the story, however, feels off sometimes; the pacing of the beginning was much slowed than the end, and Green Goblin&#039;s motivations are never fully made clear. Nonetheless a…"
+    },
     {
       "title": "Mercy",
       "year": "2026",
@@ -423,66 +483,6 @@
       "url": "https://letterboxd.com/girff/film/project-hail-mary/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-600-0-900-crop.jpg?v=ac31b6ec03",
       "review": "This movie made me believe in humanity again. Everything is done so perfectly… the acting, the cinematography, the score, EVERYTHING. I love all of Ryan Gosling’s filmography but this might just be his best work yet. 👎👎👎"
-    },
-    {
-      "title": "Dune: Part Two",
-      "year": "2024",
-      "rating": 5.0,
-      "watched": "2026-03-18",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/dune-part-two/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-600-0-900-crop.jpg?v=cc533700f8",
-      "review": "HOLY PEAK"
-    },
-    {
-      "title": "Dune",
-      "year": "2021",
-      "rating": 4.5,
-      "watched": "2026-03-17",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/dune-2021/",
-      "poster": "https://a.ltrbxd.com/resized/sm/upload/nx/8b/vs/gc/cDbNAY0KM84cxXhmj8f0dLWza3t-0-600-0-900-crop.jpg?v=49eed12751",
-      "review": "It definitely feels like a “part one,” which makes it feel incomplete. However, the rich world building and storytelling makes up for any issues I have with the pacing."
-    },
-    {
-      "title": "Zootopia 2",
-      "year": "2025",
-      "rating": 3.5,
-      "watched": "2026-03-16",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/zootopia-2/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/7/3/4/2/977342-zootopia-2-0-600-0-900-crop.jpg?v=00a15a97bc",
-      "review": "good movie 👍 definitely an improvement from the first movie, and the world building and references were very nice :)"
-    },
-    {
-      "title": "Grave of the Fireflies",
-      "year": "1988",
-      "rating": 5.0,
-      "watched": "2026-03-15",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/grave-of-the-fireflies/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/4/4/5/5/8/44558-grave-of-the-fireflies-0-600-0-900-crop.jpg?v=0c61fd55f0",
-      "review": "this movie destroyed me..I knew from the beginning it would be sad but they did NOT have to make it that sad"
-    },
-    {
-      "title": "The Wild Robot",
-      "year": "2024",
-      "rating": 4.5,
-      "watched": "2026-03-15",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-wild-robot/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/7/1/1/9/6/1071196-the-wild-robot-0-600-0-900-crop.jpg?v=a70bdbaea0",
-      "review": "I read the original book over half a decade ago, and this movie reminded me of why I loved this story so much.The animation and use of music work so well throughout the entire movie; every scene just hits so hard."
-    },
-    {
-      "title": "Lion",
-      "year": "2016",
-      "rating": 3.5,
-      "watched": "2026-03-09",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/lion/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/2/6/3/2/2/2/263222-lion-0-600-0-900-crop.jpg?v=1311804f8d",
-      "review": "Beautiful cinematography and music choice.I didn’t know it was based on a true story all the way till the end, it honestly added even more to the movie finding that out."
     }
   ],
   "ratings": [
@@ -920,8 +920,20 @@
     }
   ],
   "watchlist": {
-    "total": 56,
+    "total": 58,
     "films": [
+      {
+        "title": "Prisoners",
+        "year": "2013",
+        "url": "https://letterboxd.com/film/prisoners/",
+        "poster": "https://a.ltrbxd.com/resized/sm/upload/iw/eg/4g/nm/3w79tTsv6tmlT8Jww6snyPrgVok-0-600-0-900-crop.jpg?v=778c7ae8b8"
+      },
+      {
+        "title": "Citizen Kane",
+        "year": "1941",
+        "url": "https://letterboxd.com/film/citizen-kane/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/2/7/0/2/2702-citizen-kane-0-600-0-900-crop.jpg?v=56bbc53dfd"
+      },
       {
         "title": "How to Make Millions Before Grandma Dies",
         "year": "2024",
@@ -1022,13 +1034,13 @@
         "title": "Life Is Beautiful",
         "year": "1997",
         "url": "https://letterboxd.com/film/life-is-beautiful/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e"
+        "poster": null
       },
       {
         "title": "The Life of Chuck",
         "year": "2024",
         "url": "https://letterboxd.com/film/the-life-of-chuck/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/7/5/7/6/1/2/757612-the-life-of-chuck-0-600-0-900-crop.jpg?v=7ac670c0be"
+        "poster": null
       },
       {
         "title": "Elden Ring",
@@ -1076,18 +1088,6 @@
         "title": "Digger",
         "year": "2026",
         "url": "https://letterboxd.com/film/digger-2026/",
-        "poster": null
-      },
-      {
-        "title": "Shrek 5",
-        "year": "2027",
-        "url": "https://letterboxd.com/film/shrek-5/",
-        "poster": null
-      },
-      {
-        "title": "Avengers: Secret Wars",
-        "year": "2027",
-        "url": "https://letterboxd.com/film/avengers-secret-wars/",
         "poster": null
       }
     ]
