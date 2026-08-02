@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T08:33:57+00:00",
+  "updated": "2026-08-02T08:37:08+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 206,
+    "total": 208,
     "buckets": [
       {
         "rating": 0.5,
@@ -58,7 +58,7 @@
       },
       {
         "rating": 3.0,
-        "count": 29,
+        "count": 30,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3/by/date/"
       },
       {
@@ -68,22 +68,62 @@
       },
       {
         "rating": 4.0,
-        "count": 36,
+        "count": 35,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
         "rating": 4.5,
-        "count": 29,
+        "count": 30,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
         "rating": 5.0,
-        "count": 22,
+        "count": 23,
         "url": "https://letterboxd.com/girff/films/ratings/rated/5/by/date/"
       }
     ]
   },
   "reviews": [
+    {
+      "title": "The Maze Runner",
+      "year": "2014",
+      "rating": 3.0,
+      "watched": "2026-08-02",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/the-maze-runner/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/2/5/4/9/142549-the-maze-runner-0-600-0-900-crop.jpg?v=2423795b6f",
+      "review": "Really interesting conceptually, but the first 30 minutes are the best part of the movie. I found myself looking down at my phone a lot to realize how little time has passed since I started the movie. The twist at the end was also not set up or foreshadowed in the slightest, which leaves a bad taste in my mouth."
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "year": "2026",
+      "rating": 5.0,
+      "watched": "2026-08-01",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/spider-man-brand-new-day/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-600-0-900-crop.jpg?v=ebe6beb4fc",
+      "review": "After watching every other live action Spider-Man movie in the past 24-hours, I can confidently say that this is my favorite one. Tom Holland has always been my favorite Spider-Man, his movies have always had a certain vibe, but the tonal shift in this movie is insane. It manages to keep the comedy, but adds incredible action on-par with the TASM movies (Andrew) and emotional storytelling reminiscent of the 2000s trilogy (Tobey). This was Tom&#039;s best performances as Peter and Spider-Man, I shed a tear at the emotional scenes. This movie really feels like a blend of every single Spider-Man…"
+    },
+    {
+      "title": "Spider-Man: No Way Home",
+      "year": "2021",
+      "rating": 4.5,
+      "watched": "2026-07-31",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/spider-man-no-way-home/1/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/6/0/7/8/7/560787-spider-man-no-way-home-0-600-0-900-crop.jpg?v=a336d4f40c",
+      "review": "Man, the end of this movie still hits like a truck; I teared up multiple times in those final scenes. Seeing the full stories of both Andrew and Tobey&#039;s Spider-Man before this made their inclusion in this movie all the more satisfying. A beautiful end for them, and a new beginning for Tom&#039;s Spider-Man. I couldn&#039;t be more excited for Brand New Day."
+    },
+    {
+      "title": "Spider-Man: Far From Home",
+      "year": "2019",
+      "rating": 3.5,
+      "watched": "2026-07-31",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/spider-man-far-from-home/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/3/6/2/9/7/7/362977-spider-man-far-from-home-0-600-0-900-crop.jpg?v=d139fbf2ae",
+      "review": "This movie gets way too much hate for what it is. I agree that Spider-Man seems off when he&#039;s in Prague, London, or Berlin, but that doesn&#039;t take away from the quality of the movie itself to me. The action is a real standout here, I loved every scene and how they really focused on Peter&#039;s spidey-sense. The comedy, while still great, was a step down from Homecoming, though, certain jokes definitely fell flat for me. The writing was a lot less tight, too; many events didn&#039;t properly lead into the other and there were some pretty useless side plots taking up time near the end."
+    },
     {
       "title": "Spider-Man: Homecoming",
       "year": "2017",
@@ -443,49 +483,15 @@
       "url": "https://letterboxd.com/girff/film/the-super-mario-galaxy-movie/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/1/0/0/8/0/1110080-the-super-mario-galaxy-movie-0-600-0-900-crop.jpg?v=fefcfca134",
       "review": "A very fun movie with really colorful and fluid animation. I do wish it was longer, though."
-    },
-    {
-      "title": "Avatar: Fire and Ash",
-      "year": "2025",
-      "rating": 4.0,
-      "watched": "2026-04-04",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/avatar-fire-and-ash/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
-      "review": "I came into this movie ready for a shallow soul-less story with some fancy water CGI, but honestly it exceeded my expectations."
-    },
-    {
-      "title": "The Amazing Spider-Man",
-      "year": "2012",
-      "rating": 3.5,
-      "watched": "2026-03-29",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-amazing-spider-man/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/5/0/6/7/7/50677-the-amazing-spider-man-0-600-0-900-crop.jpg?v=2e109aabed",
-      "review": "I feel like I should’ve watched this movie sooner, wow it was good. All the scenes with Gwen were so well done, I like how she didn’t feel like a damsel in distress or anything. The only issue I had was the villain.. the Lizard just didn’t do it for me."
-    },
-    {
-      "title": "Skibidi Mallette",
-      "year": "",
-      "rating": null,
-      "watched": "2026-03-29",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/skibidi-mallette/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/7/4/7/6/9/1474769-skibidi-mallette-0-600-0-900-crop.jpg?v=fc4628ca71",
-      "review": "this movie is hella nicheit&#039;s a project by a bunch of French sophomores about a briefcase, and it&#039;s made incredibly well w dance moves"
-    },
-    {
-      "title": "Project Hail Mary",
-      "year": "2026",
-      "rating": 5.0,
-      "watched": "2026-03-24",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/project-hail-mary/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-600-0-900-crop.jpg?v=ac31b6ec03",
-      "review": "This movie made me believe in humanity again. Everything is done so perfectly… the acting, the cinematography, the score, EVERYTHING. I love all of Ryan Gosling’s filmography but this might just be his best work yet. 👎👎👎"
     }
   ],
   "ratings": [
+    {
+      "title": "Spider-Man: Brand New Day",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/spider-man-brand-new-day/",
+      "rating": 5.0
+    },
     {
       "title": "The Odyssey",
       "year": "2026",
@@ -911,17 +917,29 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/five-nights-at-freddys/",
       "rating": 3.5
-    },
-    {
-      "title": "The Boy and the Heron",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/the-boy-and-the-heron/",
-      "rating": 5.0
     }
   ],
   "watchlist": {
-    "total": 58,
+    "total": 60,
     "films": [
+      {
+        "title": "Black Panther 3",
+        "year": "2028",
+        "url": "https://letterboxd.com/film/black-panther-3/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/7/1/5/0/0/1271500-black-panther-3-0-600-0-900-crop.jpg?v=0d5d5c0188"
+      },
+      {
+        "title": "The Legend of Zelda",
+        "year": "2027",
+        "url": "https://letterboxd.com/film/the-legend-of-zelda/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/6/4/1/8/9/1064189-the-legend-of-zelda-0-600-0-900-crop.jpg?v=e8a8049c2d"
+      },
+      {
+        "title": "Zodiac",
+        "year": "2007",
+        "url": "https://letterboxd.com/film/zodiac/",
+        "poster": "https://a.ltrbxd.com/resized/sm/upload/58/tf/z6/gw/qKQIjErYaN149hZRP5Vgf8RoC7S-0-600-0-900-crop.jpg?v=72ee5db942"
+      },
       {
         "title": "Prisoners",
         "year": "2013",
@@ -1016,19 +1034,19 @@
         "title": "Good Will Hunting",
         "year": "1997",
         "url": "https://letterboxd.com/film/good-will-hunting/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/6/2/1/51621-good-will-hunting-0-600-0-900-crop.jpg?v=acb4766abd"
+        "poster": null
       },
       {
         "title": "There Will Be Blood",
         "year": "2007",
         "url": "https://letterboxd.com/film/there-will-be-blood/",
-        "poster": "https://a.ltrbxd.com/resized/sm/upload/jg/cd/7y/f5/there%20will%20be%20blood-0-600-0-900-crop.jpg?v=8a533d5350"
+        "poster": null
       },
       {
         "title": "The Lives of Others",
         "year": "2006",
         "url": "https://letterboxd.com/film/the-lives-of-others/",
-        "poster": "https://a.ltrbxd.com/resized/sm/upload/8b/y5/ap/l6/bzzDAg3fkztvfQB08VBprhs9tVE-0-600-0-900-crop.jpg?v=803117c2ab"
+        "poster": null
       },
       {
         "title": "Life Is Beautiful",
@@ -1070,24 +1088,6 @@
         "title": "The Social Reckoning",
         "year": "2026",
         "url": "https://letterboxd.com/film/the-social-reckoning/",
-        "poster": null
-      },
-      {
-        "title": "Clayface",
-        "year": "2026",
-        "url": "https://letterboxd.com/film/clayface/",
-        "poster": null
-      },
-      {
-        "title": "Avatar 4",
-        "year": "2029",
-        "url": "https://letterboxd.com/film/avatar-4/",
-        "poster": null
-      },
-      {
-        "title": "Digger",
-        "year": "2026",
-        "url": "https://letterboxd.com/film/digger-2026/",
         "poster": null
       }
     ]
