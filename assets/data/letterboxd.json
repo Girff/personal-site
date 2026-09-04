@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T07:41:51+00:00",
+  "updated": "2026-09-04T11:19:37+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -63,27 +63,57 @@
       },
       {
         "rating": 3.5,
-        "count": 32,
+        "count": 35,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
         "rating": 4.0,
-        "count": 35,
+        "count": 32,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
         "rating": 4.5,
-        "count": 17,
+        "count": 19,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
         "rating": 5.0,
-        "count": 13,
+        "count": 11,
         "url": "https://letterboxd.com/girff/films/ratings/rated/5/by/date/"
       }
     ]
   },
   "reviews": [
+    {
+      "title": "The Crucible",
+      "year": "1996",
+      "rating": 3.5,
+      "watched": "2026-08-31",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/the-crucible/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/e1/2m/w3/ld/q0wALqKrfEt4yA5flGYYkK5skoA-0-600-0-900-crop.jpg?v=71cda6ab14",
+      "review": "I&#039;m really conflicted on this movie. On one hand, looking at the story from a larger scope shows a lot of holes in the plot. The beginning of the film doesn&#039;t hook the viewer and slogs along until about the halfway mark. Additionally, the Salem Witch Trials were partially rooted in misogyny and patriarchal power structures, of which the story seems to conveniently avoid in favor of placing an adulterer on a moral high ground in its ending. At the same time, though, I can&#039;t deny the artistic ingenuity of the third act in terms of both cinematography and acting. Andrew Dunn…"
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "year": "2018",
+      "rating": 5.0,
+      "watched": "2026-08-27",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/spider-man-into-the-spider-verse/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/2/5/1/9/4/3/251943-spider-man-into-the-spider-verse-0-600-0-900-crop.jpg?v=538fe0ada6",
+      "review": "this movie STAYS goated. the ‘leap of faith’ scene is undoubtedly the greatest scene in a comic book movie. ever."
+    },
+    {
+      "title": "Inception",
+      "year": "2010",
+      "rating": 5.0,
+      "watched": "2026-08-08",
+      "rewatch": true,
+      "url": "https://letterboxd.com/girff/film/inception/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "review": "peak 😢"
+    },
     {
       "title": "The Maze Runner",
       "year": "2014",
@@ -453,36 +483,6 @@
       "url": "https://letterboxd.com/girff/film/incantation-2022/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/7/7/8/5/2/6/778526-incantation-0-600-0-900-crop.jpg?v=6c3dfde6b3",
       "review": "scary 😨 very very spooky scary 😨"
-    },
-    {
-      "title": "Lucy",
-      "year": "2014",
-      "rating": 2.0,
-      "watched": "2026-04-18",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/lucy-2014/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/6/8/8/6/0/168860-lucy-0-600-0-900-crop.jpg?v=768578ef62",
-      "review": "this is the MOST fever dream movie I’ve ever watched another side of the 2 am movie spectrum…"
-    },
-    {
-      "title": "Slumdog Millionaire",
-      "year": "2008",
-      "rating": 5.0,
-      "watched": "2026-04-17",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/slumdog-millionaire/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/4/4/6/1/3/44613-slumdog-millionaire-0-600-0-900-crop.jpg?v=6cff9e413f",
-      "review": "perfect movie to watch at 2 am 😢 somehow manages to balance incredible editing and cinematography to make suspenseful and sad moments truly come to life.. an incredible movie through and through"
-    },
-    {
-      "title": "The Super Mario Galaxy Movie",
-      "year": "2026",
-      "rating": 3.5,
-      "watched": "2026-04-05",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-super-mario-galaxy-movie/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/1/0/0/8/0/1110080-the-super-mario-galaxy-movie-0-600-0-900-crop.jpg?v=fefcfca134",
-      "review": "A very fun movie with really colorful and fluid animation. I do wish it was longer, though."
     }
   ],
   "ratings": [
@@ -628,7 +628,7 @@
       "title": "Chainsaw Man – The Movie: Reze Arc",
       "year": "2025",
       "url": "https://letterboxd.com/film/chainsaw-man-the-movie-reze-arc/",
-      "rating": 5.0
+      "rating": 4.5
     },
     {
       "title": "The Long Walk",
@@ -730,7 +730,7 @@
       "title": "100 METERS",
       "year": "2025",
       "url": "https://letterboxd.com/film/100-meters-2025/",
-      "rating": 4.0
+      "rating": 3.5
     },
     {
       "title": "DAN DA DAN: Evil Eye",
@@ -889,6 +889,12 @@
       "rating": 1.5
     },
     {
+      "title": "Walk with Me",
+      "year": "2024",
+      "url": "https://letterboxd.com/film/walk-with-me-2024-1/",
+      "rating": 3.5
+    },
+    {
       "title": "Anyone But You",
       "year": "2023",
       "url": "https://letterboxd.com/film/anyone-but-you/",
@@ -911,17 +917,29 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/godzilla-minus-one/",
       "rating": 4.5
-    },
-    {
-      "title": "Five Nights at Freddy's",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/five-nights-at-freddys/",
-      "rating": 2.5
     }
   ],
   "watchlist": {
-    "total": 60,
+    "total": 62,
     "films": [
+      {
+        "title": "Incredibles 3",
+        "year": "2028",
+        "url": "https://letterboxd.com/film/incredibles-3/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/0/7/5/5/4/1207554-incredibles-3-0-600-0-900-crop.jpg?v=807571e216"
+      },
+      {
+        "title": "Untitled X-Men Film",
+        "year": "2028",
+        "url": "https://letterboxd.com/film/untitled-x-men-film/",
+        "poster": null
+      },
+      {
+        "title": "Anora",
+        "year": "2024",
+        "url": "https://letterboxd.com/film/anora/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/9/5/9/5/4/0/959540-anora-0-600-0-900-crop.jpg?v=6f92877033"
+      },
       {
         "title": "The Matrix",
         "year": "1999",
@@ -1016,19 +1034,19 @@
         "title": "It's Such a Beautiful Day",
         "year": "2012",
         "url": "https://letterboxd.com/film/its-such-a-beautiful-day/",
-        "poster": "https://a.ltrbxd.com/resized/sm/upload/on/mj/ou/k4/such%20a%20beautiful-0-600-0-900-crop.jpg?v=70d7c20455"
+        "poster": null
       },
       {
         "title": "12 Years a Slave",
         "year": "2013",
         "url": "https://letterboxd.com/film/12-years-a-slave/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/6/2/6/7/1/62671-12-years-a-slave-0-600-0-900-crop.jpg?v=f29aef4645"
+        "poster": null
       },
       {
         "title": "Ren Faire",
         "year": "2024",
         "url": "https://letterboxd.com/film/ren-faire/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/5/5/0/8/6/1155086-ren-faire-0-600-0-900-crop.jpg?v=2d391e0460"
+        "poster": null
       },
       {
         "title": "SPERMWORLD",
@@ -1070,24 +1088,6 @@
         "title": "Life Is Beautiful",
         "year": "1997",
         "url": "https://letterboxd.com/film/life-is-beautiful/",
-        "poster": null
-      },
-      {
-        "title": "The Life of Chuck",
-        "year": "2024",
-        "url": "https://letterboxd.com/film/the-life-of-chuck/",
-        "poster": null
-      },
-      {
-        "title": "Elden Ring",
-        "year": "2028",
-        "url": "https://letterboxd.com/film/elden-ring/",
-        "poster": null
-      },
-      {
-        "title": "Sentimental Value",
-        "year": "2025",
-        "url": "https://letterboxd.com/film/sentimental-value-2025/",
         "poster": null
       }
     ]
