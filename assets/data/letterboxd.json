@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T11:19:37+00:00",
+  "updated": "2026-09-05T10:37:00+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 207,
+    "total": 208,
     "buckets": [
       {
         "rating": 0.5,
@@ -43,7 +43,7 @@
       },
       {
         "rating": 1.5,
-        "count": 12,
+        "count": 13,
         "url": "https://letterboxd.com/girff/films/ratings/rated/1%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,16 @@
     ]
   },
   "reviews": [
+    {
+      "title": "The Runner",
+      "year": "2026",
+      "rating": 1.5,
+      "watched": "2026-09-04",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/the-runner-2026-2/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/7/1/2/7/5/1271275-the-runner-2026-2-0-600-0-900-crop.jpg?v=d2e0c447b6",
+      "review": "To start with the good: I was pleasantly surprised by the cinematography (rightfully so, it’s the same guy behind Slumdog Millionaire) and the ending was a decent twist. However, Gal Gadot’s horrible performance, the absolutely insane plot, and the dialogue seemingly written by a seven-year-old works to cement this movie as a member of the ‘trashy Amazon Prime movie about mass surveillance’ club alongside War of the Worlds (2025)."
+    },
     {
       "title": "The Crucible",
       "year": "1996",
@@ -473,19 +483,15 @@
       "url": "https://letterboxd.com/girff/film/spider-man-no-way-home/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/5/6/0/7/8/7/560787-spider-man-no-way-home-0-600-0-900-crop.jpg?v=a336d4f40c",
       "review": "First rewatch since I first watched it in 2021.. and this movie is incredible. I’m not afraid to admit I teared up at the ending, I can’t wait to see its repercussions in Spider-Man: Brand New Day."
-    },
-    {
-      "title": "Incantation",
-      "year": "2022",
-      "rating": 3.5,
-      "watched": "2026-04-19",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/incantation-2022/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/7/7/8/5/2/6/778526-incantation-0-600-0-900-crop.jpg?v=6c3dfde6b3",
-      "review": "scary 😨 very very spooky scary 😨"
     }
   ],
   "ratings": [
+    {
+      "title": "The Runner",
+      "year": "2026",
+      "url": "https://letterboxd.com/film/the-runner-2026-2/",
+      "rating": 1.5
+    },
     {
       "title": "Spider-Man: Brand New Day",
       "year": "2026",
@@ -911,12 +917,6 @@
       "year": "2023",
       "url": "https://letterboxd.com/film/the-marvels/",
       "rating": 0.5
-    },
-    {
-      "title": "Godzilla Minus One",
-      "year": "2023",
-      "url": "https://letterboxd.com/film/godzilla-minus-one/",
-      "rating": 4.5
     }
   ],
   "watchlist": {
