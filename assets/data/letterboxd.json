@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T10:37:00+00:00",
+  "updated": "2026-09-06T10:59:10+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -58,17 +58,17 @@
       },
       {
         "rating": 3.0,
-        "count": 36,
+        "count": 37,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3/by/date/"
       },
       {
         "rating": 3.5,
-        "count": 35,
+        "count": 33,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
         "rating": 4.0,
-        "count": 32,
+        "count": 33,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
@@ -664,7 +664,7 @@
       "title": "Bugonia",
       "year": "2025",
       "url": "https://letterboxd.com/film/bugonia/",
-      "rating": 3.5
+      "rating": 4.0
     },
     {
       "title": "Lokah Chapter 1: Chandra",
