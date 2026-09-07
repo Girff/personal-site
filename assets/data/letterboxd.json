@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T10:59:10+00:00",
+  "updated": "2026-09-07T12:35:38+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 208,
+    "total": 206,
     "buckets": [
       {
         "rating": 0.5,
@@ -63,12 +63,12 @@
       },
       {
         "rating": 3.5,
-        "count": 33,
+        "count": 36,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
         "rating": 4.0,
-        "count": 33,
+        "count": 28,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
@@ -652,7 +652,7 @@
       "title": "Obsession",
       "year": "2025",
       "url": "https://letterboxd.com/film/obsession-2025/",
-      "rating": 4.0
+      "rating": 3.5
     },
     {
       "title": "Wake Up Dead Man",
@@ -712,7 +712,7 @@
       "title": "Superman",
       "year": "2025",
       "url": "https://letterboxd.com/film/superman-2025/",
-      "rating": 4.0
+      "rating": 3.5
     },
     {
       "title": "KPop Demon Hunters",
@@ -920,7 +920,7 @@
     }
   ],
   "watchlist": {
-    "total": 62,
+    "total": 61,
     "films": [
       {
         "title": "Incredibles 3",
@@ -939,12 +939,6 @@
         "year": "2024",
         "url": "https://letterboxd.com/film/anora/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/9/5/9/5/4/0/959540-anora-0-600-0-900-crop.jpg?v=6f92877033"
-      },
-      {
-        "title": "The Matrix",
-        "year": "1999",
-        "url": "https://letterboxd.com/film/the-matrix/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/5/1/8/51518-the-matrix-0-600-0-900-crop.jpg?v=fc7c366afe"
       },
       {
         "title": "Memento",
@@ -1034,7 +1028,7 @@
         "title": "It's Such a Beautiful Day",
         "year": "2012",
         "url": "https://letterboxd.com/film/its-such-a-beautiful-day/",
-        "poster": null
+        "poster": "https://a.ltrbxd.com/resized/sm/upload/on/mj/ou/k4/such%20a%20beautiful-0-600-0-900-crop.jpg?v=70d7c20455"
       },
       {
         "title": "12 Years a Slave",
@@ -1088,6 +1082,12 @@
         "title": "Life Is Beautiful",
         "year": "1997",
         "url": "https://letterboxd.com/film/life-is-beautiful/",
+        "poster": null
+      },
+      {
+        "title": "The Life of Chuck",
+        "year": "2024",
+        "url": "https://letterboxd.com/film/the-life-of-chuck/",
         "poster": null
       }
     ]
