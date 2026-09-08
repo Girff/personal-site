@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T12:35:38+00:00",
+  "updated": "2026-09-08T11:21:02+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -920,7 +920,7 @@
     }
   ],
   "watchlist": {
-    "total": 61,
+    "total": 59,
     "films": [
       {
         "title": "Incredibles 3",
@@ -1013,12 +1013,6 @@
         "poster": "https://a.ltrbxd.com/resized/film-poster/4/0/4/2/6/6/404266-uncut-gems-0-600-0-900-crop.jpg?v=670cb7034d"
       },
       {
-        "title": "Minions & Monsters",
-        "year": "2026",
-        "url": "https://letterboxd.com/film/minions-monsters-2026/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996"
-      },
-      {
         "title": "Tuner",
         "year": "2025",
         "url": "https://letterboxd.com/film/tuner/",
@@ -1034,7 +1028,7 @@
         "title": "12 Years a Slave",
         "year": "2013",
         "url": "https://letterboxd.com/film/12-years-a-slave/",
-        "poster": null
+        "poster": "https://a.ltrbxd.com/resized/film-poster/6/2/6/7/1/62671-12-years-a-slave-0-600-0-900-crop.jpg?v=f29aef4645"
       },
       {
         "title": "Ren Faire",
@@ -1088,6 +1082,12 @@
         "title": "The Life of Chuck",
         "year": "2024",
         "url": "https://letterboxd.com/film/the-life-of-chuck/",
+        "poster": null
+      },
+      {
+        "title": "Elden Ring",
+        "year": "2028",
+        "url": "https://letterboxd.com/film/elden-ring/",
         "poster": null
       }
     ]
