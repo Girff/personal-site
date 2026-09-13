@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T10:48:56+00:00",
+  "updated": "2026-09-13T11:54:43+00:00",
   "username": "Girff",
   "profile": "https://letterboxd.com/Girff/",
   "favorites": [
@@ -29,7 +29,7 @@
     }
   ],
   "histogram": {
-    "total": 206,
+    "total": 203,
     "buckets": [
       {
         "rating": 0.5,
@@ -53,27 +53,27 @@
       },
       {
         "rating": 2.5,
-        "count": 27,
+        "count": 23,
         "url": "https://letterboxd.com/girff/films/ratings/rated/2%C2%BD/by/date/"
       },
       {
         "rating": 3.0,
-        "count": 37,
+        "count": 39,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3/by/date/"
       },
       {
         "rating": 3.5,
-        "count": 41,
+        "count": 43,
         "url": "https://letterboxd.com/girff/films/ratings/rated/3%C2%BD/by/date/"
       },
       {
         "rating": 4.0,
-        "count": 29,
+        "count": 27,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4/by/date/"
       },
       {
         "rating": 4.5,
-        "count": 16,
+        "count": 15,
         "url": "https://letterboxd.com/girff/films/ratings/rated/4%C2%BD/by/date/"
       },
       {
@@ -84,6 +84,26 @@
     ]
   },
   "reviews": [
+    {
+      "title": "Her",
+      "year": "2013",
+      "rating": 4.0,
+      "watched": "2026-09-12",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/her/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/au/nb/i6/lq/fsoTLnUXEUTNuVCBxAJMY0HPPd-0-600-0-900-crop.jpg?v=16789732be",
+      "review": "I started watching this film because of how popular AI chatbots have become. I thought to myself &quot;hey, let&#039;s see how accurate this is to the present.&quot; I stayed because of how this film made me feel. The message isn&#039;t &quot;don&#039;t get in a relationship with a chatbot.&quot; Honestly, his relationship being with an AI is one of the least thematically relevant parts of this movie. The writers form a commentary about dating, sex, marriage, divorce, and grief and they do it through the lens of a science fictional world. The people are what make this movie special, not the…"
+    },
+    {
+      "title": "Pride & Prejudice",
+      "year": "2005",
+      "rating": 4.0,
+      "watched": "2026-09-12",
+      "rewatch": false,
+      "url": "https://letterboxd.com/girff/film/pride-prejudice/",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/nq/jo/26/tn/dAC0hkYmz5ZOCHURZCyj9isPMPd-0-600-0-900-crop.jpg?v=b3dac3ffd7",
+      "review": "I&#039;m trying to broaden my film horizons to new genres, and part of that is to finally start watching romance. This was an incredible start. The way this film handles the precedent of marriage in 18th century England was one of its strongest aspects. Mrs. Bennet, mother to Elizabeth and four more daughters, makes her whole life about marrying her daughters; marriage was a method of social climbing, after all. But Elizabeth throws all this out to find someone she really loves. It creates a contrast and a back and forth tug between two competing ideals. The filmmaking was a standout, as…"
+    },
     {
       "title": "Arrival",
       "year": "2016",
@@ -463,26 +483,6 @@
       "url": "https://letterboxd.com/girff/film/nope/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/6/8/2/5/4/7/682547-nope-0-600-0-900-crop.jpg?v=d6a6158cc3",
       "review": "With both this movie and Get Out, Jordan Peele continues to show me how incredible he is at writing horror. Some of those scenes really made my heart pound more than I’m willing to admit. Nope also gives a completely unique perspective to the alien/sci-fi genre, subverting my expectations on many instances. At the same time, it manages to have real emotional moments that hit hard. Now I have to watch Us to see if all of his horror movies are this good…"
-    },
-    {
-      "title": "The Drama",
-      "year": "2026",
-      "rating": 4.0,
-      "watched": "2026-05-23",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-drama/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
-      "review": "This movie wasn’t what I thought it would be… it had some really interesting elements that came together quite well at the end. The third act is what made the movie truly great for me, the performances by both Zendaya and Pattinson were incredible. Surprisingly funny too."
-    },
-    {
-      "title": "The Sheep Detectives",
-      "year": "2026",
-      "rating": 4.5,
-      "watched": "2026-05-16",
-      "rewatch": false,
-      "url": "https://letterboxd.com/girff/film/the-sheep-detectives/",
-      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/8/3/1/3/5/1183135-the-sheep-detectives-0-600-0-900-crop.jpg?v=c7b622176e",
-      "review": "A charming, wholesome, and hilarious story about a flock of sheep who really love their shepherd :). The movie deals with themes of grief and inclusion, which makes it a really good movie for kids, but it also manages to hook in older audiences too with just how well it’s written. The voice performances were all very well done, too."
     }
   ],
   "ratings": [
@@ -538,7 +538,7 @@
       "title": "Michael",
       "year": "2026",
       "url": "https://letterboxd.com/film/michael-2026/",
-      "rating": 2.5
+      "rating": 3.0
     },
     {
       "title": "The Super Mario Galaxy Movie",
@@ -781,12 +781,6 @@
       "rating": 1.5
     },
     {
-      "title": "Adolescence",
-      "year": "2025",
-      "url": "https://letterboxd.com/film/adolescence-2025/",
-      "rating": 4.5
-    },
-    {
       "title": "Captain America: Brave New World",
       "year": "2025",
       "url": "https://letterboxd.com/film/captain-america-brave-new-world/",
@@ -820,7 +814,7 @@
       "title": "The Wild Robot",
       "year": "2024",
       "url": "https://letterboxd.com/film/the-wild-robot/",
-      "rating": 4.0
+      "rating": 3.5
     },
     {
       "title": "Transformers One",
@@ -922,6 +916,12 @@
   "watchlist": {
     "total": 58,
     "films": [
+      {
+        "title": "Casablanca",
+        "year": "1942",
+        "url": "https://letterboxd.com/film/casablanca/",
+        "poster": "https://a.ltrbxd.com/resized/sm/upload/kq/vf/8s/1p/wOBKAoUJZb5qTsWv5XXvVV2vUzz-0-600-0-900-crop.jpg?v=cdb9b25970"
+      },
       {
         "title": "Captain America: The Winter Soldier",
         "year": "2014",
@@ -1028,7 +1028,7 @@
         "title": "Ren Faire",
         "year": "2024",
         "url": "https://letterboxd.com/film/ren-faire/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/5/5/0/8/6/1155086-ren-faire-0-600-0-900-crop.jpg?v=2d391e0460"
+        "poster": null
       },
       {
         "title": "SPERMWORLD",
@@ -1082,12 +1082,6 @@
         "title": "Elden Ring",
         "year": "2028",
         "url": "https://letterboxd.com/film/elden-ring/",
-        "poster": null
-      },
-      {
-        "title": "Sentimental Value",
-        "year": "2025",
-        "url": "https://letterboxd.com/film/sentimental-value-2025/",
         "poster": null
       }
     ]
